@@ -1,0 +1,28 @@
+{
+  "services": [
+    {
+      "id": "tree-removal",
+      "title": "Tree Removal",
+      "description": "Safe and professional tree removal services for hazardous or unwanted trees.",
+      "features": ["Complete removal", "Stump grinding", "Debris cleanup", "Emergency removal"]
+    },
+    {
+      "id": "tree-pruning",
+      "title": "Tree Pruning",
+      "description": "Expert pruning to maintain tree health and improve appearance.",
+      "features": ["Crown thinning", "Dead wood removal", "Shaping", "Health assessment"]
+    },
+    {
+      "id": "stump-grinding",
+      "title": "Stump Grinding",
+      "description": "Professional stump removal to clear your property completely.",
+      "features": ["Complete grinding", "Root removal", "Site cleanup", "Landscape restoration"]
+    },
+    {
+      "id": "emergency-services",
+      "title": "Emergency Services",
+      "description": "24/7 emergency tree services for storm damage and hazardous situations.",
+      "features": ["Storm damage", "Fallen trees", "Hazard assessment", "Quick response"]
+    }
+  ]
+}

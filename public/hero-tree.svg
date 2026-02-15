@@ -1,0 +1,11 @@
+<!-- Placeholder for hero-tree.jpg -->
+<!-- This should be replaced with an actual image of tree services -->
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#E8F5E9"/>
+  <text x="300" y="200" text-anchor="middle" font-family="Arial" font-size="24" fill="#2E7D32">
+    Tree Services Hero Image
+  </text>
+  <text x="300" y="230" text-anchor="middle" font-family="Arial" font-size="16" fill="#66BB6A">
+    Replace with actual tree service photo
+  </text>
+</svg>

@@ -1,0 +1,24 @@
+{
+  "faqs": [
+    {
+      "question": "Are you licensed and insured?",
+      "answer": "Yes, we are fully licensed, bonded, and insured for all tree services we provide."
+    },
+    {
+      "question": "How much does tree removal cost?",
+      "answer": "Costs vary based on tree size, location, and complexity. We provide free estimates for all projects."
+    },
+    {
+      "question": "Do you offer emergency services?",
+      "answer": "Yes, we provide 24/7 emergency tree services for storm damage and hazardous situations."
+    },
+    {
+      "question": "What areas do you service?",
+      "answer": "We service the entire metropolitan area and surrounding communities. Contact us to confirm service in your specific location."
+    },
+    {
+      "question": "How long does a typical tree removal take?",
+      "answer": "Most tree removals are completed within a few hours, but complex jobs may take longer. We'll provide a timeline during your free estimate."
+    }
+  ]
+}
