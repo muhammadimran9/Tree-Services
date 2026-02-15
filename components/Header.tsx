@@ -49,9 +49,6 @@ export default function Header() {
                   <Link href="/services/stump-grinding" className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600" role="menuitem">
                     Stump Grinding
                   </Link>
-                  <Link href="/services/emergency" className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600" role="menuitem">
-                    Emergency Service
-                  </Link>
                 </div>
               )}
             </div>
@@ -61,20 +58,11 @@ export default function Header() {
             <Link href="/blog" className="text-gray-700 hover:text-green-600 transition-colors">
               Tree Care Tips
             </Link>
-            <Link href="/areas-served" className="text-gray-700 hover:text-green-600 transition-colors">
-              Areas Served
-            </Link>
             <Link href="/faq" className="text-gray-700 hover:text-green-600 transition-colors">
               FAQ
             </Link>
             <Link href="/quote" className="text-gray-700 hover:text-green-600 transition-colors">
               Get a Quote
-            </Link>
-            <Link 
-              href="/emergency-services" 
-              className="text-red-600 font-semibold hover:text-red-700 transition-colors"
-            >
-              Emergency Service
             </Link>
           </div>
 
@@ -101,16 +89,6 @@ export default function Header() {
               </svg>
               (503) 449-4066
             </a>
-            <Link 
-              href="/emergency-services" 
-              className="flex items-center bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors font-semibold"
-              aria-label="24/7 Emergency Tree Service"
-            >
-              <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
-              </svg>
-              24/7 Emergency
-            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -158,9 +136,6 @@ export default function Header() {
                     <Link href="/services/stump-grinding" className="block px-3 py-2 text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
                       Stump Grinding
                     </Link>
-                    <Link href="/services/emergency" className="block px-3 py-2 text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
-                      Emergency Service
-                    </Link>
                   </div>
                 )}
               </div>
@@ -170,20 +145,11 @@ export default function Header() {
               <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
                 Tree Care Tips
               </Link>
-              <Link href="/areas-served" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
-                Areas Served
-              </Link>
               <Link href="/faq" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md">
                 FAQ
               </Link>
               <Link href="/quote" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md">
                 Get a Quote
-              </Link>
-              <Link 
-                href="/emergency" 
-                className="block px-3 py-2 text-red-600 font-semibold hover:bg-red-50 rounded-md"
-              >
-                Emergency Service
               </Link>
               
               {/* Mobile Phone CTA */}

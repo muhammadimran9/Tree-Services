@@ -10,11 +10,11 @@ import DetailedServicesGrid from '@/components/DetailedServicesGrid';
 import WhyChooseSection from '@/components/WhyChooseSection';
 
 export const metadata: Metadata = {
-  title: "Tree Service Portland Oregon | Urban Timber Tree Service Inc.",
-  description: "Award-winning tree service in Portland, Oregon. 30 years ISA certified, 5-star rating. Tree removal, pruning, emergency services. CCB Licensed #212995.",
+  title: "Tree Service Portland Oregon | Urban Timber Tree Service - Free Quotes",
+  description: "Professional tree service in Portland, Oregon. ISA certified arborists, 30+ years experience, 5-star rating. Tree removal, pruning, emergency services. Call (503) 449-4066 for free estimate.",
   openGraph: {
-    title: "Tree Service Portland Oregon | Urban Timber Tree Service Inc.",
-    description: "Award-winning tree service in Portland, Oregon. 30 years ISA certified, 5-star rating. Tree removal, pruning, emergency services.",
+    title: "Tree Service Portland Oregon | Urban Timber Tree Service",
+    description: "Professional tree service in Portland, Oregon. ISA certified arborists, 30+ years experience, 5-star rating.",
     url: "https://urbantimber.com",
     images: [
       {
