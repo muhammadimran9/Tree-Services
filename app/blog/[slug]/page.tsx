@@ -147,7 +147,7 @@ export default function BlogPost({ params }: BlogPostProps) {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-green-700 to-green-900 text-white">
+      <section className="relative bg-linear-to-r from-green-700 to-green-900 text-white">
         {post.image && (
           <div className="absolute inset-0">
             <Image
