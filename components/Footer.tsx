@@ -66,16 +66,32 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Service Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2">
-              <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors">All Services</Link></li>
-              <li><Link href="/quote" className="text-gray-300 hover:text-white transition-colors">Get a Quote</Link></li>
-              <li><Link href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="/blog" className="text-gray-300 hover:text-white transition-colors">Tree Care Tips</Link></li>
-              <li><Link href="/faq" className="text-gray-300 hover:text-white transition-colors">FAQ</Link></li>
-              <li><Link href="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/services/tree-removal" className="text-gray-300 hover:text-white transition-colors">Tree Removal</Link></li>
+              <li><Link href="/services/tree-trimming" className="text-gray-300 hover:text-white transition-colors">Tree Trimming</Link></li>
+              <li><Link href="/services/stump-grinding" className="text-gray-300 hover:text-white transition-colors">Stump Grinding</Link></li>
+              <li><Link href="/services/emergency-tree-service" className="text-gray-300 hover:text-white transition-colors">Emergency Tree Service</Link></li>
+              <li><Link href="/services/arborist-services" className="text-gray-300 hover:text-white transition-colors">Arborist Services</Link></li>
+            </ul>
+          </div>
+
+          {/* Service Areas */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Service Areas</h3>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>Portland</li>
+              <li>Beaverton</li>
+              <li>Lake Oswego</li>
+              <li>Gresham</li>
+              <li>Tigard</li>
+              <li>Hillsboro</li>
+              <li>Milwaukie</li>
+              <li>West Linn</li>
+              <li>Oregon City</li>
+              <li>Happy Valley</li>
             </ul>
           </div>
 
@@ -107,8 +123,29 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center text-gray-300 text-sm">
-            <p>© 2026 Urban Timber Tree Service Inc.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Legal</h3>
+              <ul className="space-y-2 text-sm">
+                <li><Link href="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
+                <li><Link href="/terms-conditions" className="text-gray-300 hover:text-white transition-colors">Terms & Conditions</Link></li>
+                <li><Link href="/disclaimer" className="text-gray-300 hover:text-white transition-colors">Disclaimer</Link></li>
+                <li><Link href="/sitemap" className="text-gray-300 hover:text-white transition-colors">Sitemap</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-2 text-sm">
+                <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors">All Services</Link></li>
+                <li><Link href="/quote" className="text-gray-300 hover:text-white transition-colors">Get a Quote</Link></li>
+                <li><Link href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
+                <li><Link href="/blog" className="text-gray-300 hover:text-white transition-colors">Blog</Link></li>
+                <li><Link href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact Us</Link></li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row justify-between items-center text-gray-300 text-sm border-t border-gray-800 pt-6">
+            <p>© {new Date().getFullYear()} Urban Timber Tree Service Inc. All rights reserved.</p>
             <p className="mt-2 md:mt-0">Website By: <a href="https://stellaractive.com" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 transition-colors">Stellaractive</a></p>
           </div>
         </div>

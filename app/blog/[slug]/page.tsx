@@ -1,14 +1,14 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
 import Link from 'next/link';
 
-// Blog posts data - in production this would come from a CMS or database
-const blogPosts = {
+// Default blog posts data
+const defaultBlogPosts = {
   'seasonal-tree-care-portland': {
     title: 'Essential Seasonal Tree Care Tips for Portland Homeowners',
     content: `
@@ -111,15 +111,33 @@ interface BlogPostProps {
 
 export default function BlogPost({ params }: BlogPostProps) {
   const [showToc, setShowToc] = useState(false);
-  
-  const post = blogPosts[params.slug as keyof typeof blogPosts];
-  
+  const [post, setPost] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Load from localStorage first, then fall back to default
+    const storedPosts = JSON.parse(localStorage.getItem('blogPosts') || '[]');
+    const allPosts = [...storedPosts, ...Object.values(defaultBlogPosts)];
+    
+    const foundPost = allPosts.find((p: any) => p.slug === params.slug);
+    
+    if (foundPost) {
+      setPost(foundPost);
+    }
+    setLoading(false);
+  }, [params.slug]);
+
+  if (loading) {
+    return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
+  }
+
   if (!post) {
     notFound();
   }
 
   // Extract H2 headings for TOC
-  const headings = post.content.match(/<h2[^>]*>([^<]+)<\/h2>/g) || [];
+  const content = post.content || '';
+  const headings = content.match(/<h2[^>]*>([^<]+)<\/h2>/g) || [];
   const cleanHeadings = headings.map(heading => 
     heading.replace(/<[^>]*>/g, '').replace(/<\/h2>/, '')
   );
@@ -130,14 +148,17 @@ export default function BlogPost({ params }: BlogPostProps) {
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-green-700 to-green-900 text-white">
-        <div className="absolute inset-0">
-          <Image
-            src={post.image}
-            alt={post.title}
-            fill
-            className="object-cover opacity-20"
-          />
-        </div>
+        {post.image && (
+          <div className="absolute inset-0">
+            <Image
+              src={post.image}
+              alt={post.title}
+              fill
+              className="object-cover opacity-20"
+              unoptimized={post.image.startsWith('http')}
+            />
+          </div>
+        )}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="max-w-4xl">
             <div className="flex items-center text-sm text-green-100 mb-4">
@@ -149,7 +170,7 @@ export default function BlogPost({ params }: BlogPostProps) {
                 })}
               </time>
               <span className="mx-2">•</span>
-              <span>{post.readTime}</span>
+              <span>{post.readTime || '5 min read'}</span>
               <span className="mx-2">•</span>
               <span className="bg-green-600 px-2 py-1 rounded text-xs">
                 {post.category}
@@ -203,7 +224,7 @@ export default function BlogPost({ params }: BlogPostProps) {
           <div 
             className="prose prose-lg max-w-none"
             dangerouslySetInnerHTML={{
-              __html: post.content.replace(
+              __html: (post.content || '').replace(
                 /<h2([^>]*)>([^<]+)<\/h2>/g, 
                 (match, p1, content) => {
                   const cleanContent = content.replace(/<[^>]*>/g, '');

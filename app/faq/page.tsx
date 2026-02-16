@@ -226,7 +226,7 @@ export default function FAQPage() {
                 Call (503) 449-4066
               </a>
               <a 
-                href="/tree-service-and-trimming-quote" 
+                href="/quote" 
                 className="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
               >
                 Ask a Question

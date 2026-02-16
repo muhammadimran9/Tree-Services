@@ -1,10 +1,13 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
 
-// Blog posts data - in production this would come from a CMS or database
-const blogPosts = [
+// Default blog posts data
+const defaultBlogPosts = [
   {
     slug: 'seasonal-tree-care-portland',
     title: 'Essential Seasonal Tree Care Tips for Portland Homeowners',
@@ -68,6 +71,14 @@ const blogPosts = [
 ];
 
 export default function BlogListingPage() {
+  const [blogPosts, setBlogPosts] = useState(defaultBlogPosts);
+
+  useEffect(() => {
+    // Load from localStorage and merge with defaults
+    const storedPosts = JSON.parse(localStorage.getItem('blogPosts') || '[]');
+    setBlogPosts([...storedPosts, ...defaultBlogPosts]);
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <Header />

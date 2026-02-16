@@ -43,11 +43,17 @@ export default function Header() {
                   <Link href="/services/tree-removal" className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600" role="menuitem">
                     Tree Removal
                   </Link>
-                  <Link href="/services/tree-pruning" className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600" role="menuitem">
-                    Tree Pruning
+                  <Link href="/services/tree-trimming" className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600" role="menuitem">
+                    Tree Trimming
                   </Link>
                   <Link href="/services/stump-grinding" className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600" role="menuitem">
                     Stump Grinding
+                  </Link>
+                  <Link href="/services/emergency-tree-service" className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600" role="menuitem">
+                    Emergency Tree Service
+                  </Link>
+                  <Link href="/services/arborist-services" className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600" role="menuitem">
+                    Arborist Services
                   </Link>
                 </div>
               )}
@@ -55,14 +61,14 @@ export default function Header() {
             <Link href="/about" className="text-gray-700 hover:text-green-600 transition-colors">
               About
             </Link>
+            <Link href="/contact" className="text-gray-700 hover:text-green-600 transition-colors">
+              Contact
+            </Link>
+            <Link href="/locations/portland-tree-service" className="text-gray-700 hover:text-green-600 transition-colors">
+              Locations
+            </Link>
             <Link href="/blog" className="text-gray-700 hover:text-green-600 transition-colors">
-              Tree Care Tips
-            </Link>
-            <Link href="/faq" className="text-gray-700 hover:text-green-600 transition-colors">
-              FAQ
-            </Link>
-            <Link href="/quote" className="text-gray-700 hover:text-green-600 transition-colors">
-              Get a Quote
+              Blog
             </Link>
           </div>
 
@@ -130,11 +136,17 @@ export default function Header() {
                     <Link href="/services/tree-removal" className="block px-3 py-2 text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
                       Tree Removal
                     </Link>
-                    <Link href="/services/tree-pruning" className="block px-3 py-2 text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
-                      Tree Pruning
+                    <Link href="/services/tree-trimming" className="block px-3 py-2 text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
+                      Tree Trimming
                     </Link>
                     <Link href="/services/stump-grinding" className="block px-3 py-2 text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
                       Stump Grinding
+                    </Link>
+                    <Link href="/services/emergency-tree-service" className="block px-3 py-2 text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
+                      Emergency Tree Service
+                    </Link>
+                    <Link href="/services/arborist-services" className="block px-3 py-2 text-gray-600 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
+                      Arborist Services
                     </Link>
                   </div>
                 )}
@@ -142,14 +154,14 @@ export default function Header() {
               <Link href="/about" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
                 About
               </Link>
+              <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
+                Contact
+              </Link>
+              <Link href="/locations/portland-tree-service" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
+                Locations
+              </Link>
               <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
-                Tree Care Tips
-              </Link>
-              <Link href="/faq" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md">
-                FAQ
-              </Link>
-              <Link href="/quote" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md">
-                Get a Quote
+                Blog
               </Link>
               
               {/* Mobile Phone CTA */}
