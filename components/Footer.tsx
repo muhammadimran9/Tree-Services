@@ -9,16 +9,16 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
               <div className="w-8 h-8 bg-green-600 rounded-full mr-3"></div>
-              <span className="text-xl font-bold">Urban Timber Tree Service Inc.</span>
+              <span className="text-xl font-bold">Tree Services</span>
             </div>
             <div className="text-gray-300 mb-4 space-y-2">
               <p>10808 SE Harold St, Portland, OR 97266</p>
               <p>PO Box 86365</p>
               <a 
-                href="mailto:office@urbantimbertree.com" 
+                href="mailto:info@yourtreeservicewebsite.com" 
                 className="text-green-400 hover:text-green-300 transition-colors"
               >
-                office@urbantimbertree.com
+                info@yourtreeservicewebsite.com
               </a>
               <a 
                 href="tel:503-449-4066" 
@@ -109,7 +109,7 @@ export default function Footer() {
                 <svg className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:info@urbantimber.com" className="hover:text-white transition-colors">info@urbantimber.com</a>
+                <a href="mailto:info@yourtreeservicewebsite.com" className="hover:text-white transition-colors">info@yourtreeservicewebsite.com</a>
               </li>
               <li className="flex items-start">
                 <svg className="h-5 w-5 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -145,8 +145,8 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-300 text-sm border-t border-gray-800 pt-6">
-            <p>© {new Date().getFullYear()} Urban Timber Tree Service Inc. All rights reserved.</p>
-            <p className="mt-2 md:mt-0">Website By: <a href="https://stellaractive.com" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 transition-colors">Stellaractive</a></p>
+            <p>© {new Date().getFullYear()} Tree Services. All rights reserved.</p>
+            <p className="mt-2 md:mt-0">Professional tree care in the Portland, Oregon metro area.</p>
           </div>
         </div>
       </div>

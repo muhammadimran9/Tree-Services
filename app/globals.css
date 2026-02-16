@@ -1,12 +1,14 @@
 @import "tailwindcss";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #1F1F1F;
-  --primary-green: #2E7D32;
-  --light-green: #66BB6A;
-  --accent-orange: #FF7043;
-  --dark-gray: #1F1F1F;
+  --background: #f9fafb;
+  --foreground: #111827;
+  --primary-green: #166534; /* deep natural green */
+  --light-green: #4ade80;   /* accent green */
+  --accent-orange: #f97316; /* accent for CTAs */
+  --dark-gray: #111827;
 }
 
 @theme inline {
@@ -16,28 +18,11 @@
   --color-secondary: var(--light-green);
   --color-accent: var(--accent-orange);
   --color-dark: var(--dark-gray);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1F1F1F;
-    --foreground: #ffffff;
-  }
+  --font-sans: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: system-ui, -apple-system, sans-serif;
-}
-
-/* Preload critical fonts */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }

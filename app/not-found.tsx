@@ -52,7 +52,7 @@ export default function NotFound() {
               <h3 className="font-semibold text-gray-900 mb-2">Need Help?</h3>
               <ul className="space-y-1 text-gray-600">
                 <li><a href="tel:503-449-4066" className="hover:text-green-700">(503) 449-4066</a></li>
-                <li><a href="mailto:office@urbantimbertree.com" className="hover:text-green-700">Email Us</a></li>
+                <li><a href="mailto:info@yourtreeservicewebsite.com" className="hover:text-green-700">Email Us</a></li>
                 <li><Link href="/contact" className="hover:text-green-700">Contact Form</Link></li>
               </ul>
             </div>

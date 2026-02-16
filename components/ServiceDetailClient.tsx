@@ -50,7 +50,7 @@ export default function ServiceDetailClient({ service, slug }: ServiceDetailClie
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-green-700 to-green-900 text-white">
+      <section className="relative bg-linear-to-r from-green-700 to-green-900 text-white">
         <div className="absolute inset-0">
           <Image
             src="/hero-tree.svg"
@@ -171,7 +171,7 @@ export default function ServiceDetailClient({ service, slug }: ServiceDetailClie
             {/* How We Execute */}
             <div>
               <h3 className="text-2xl font-bold text-green-700 mb-6">
-                How Urban Timber Executes {service.name}
+                How Our Team Executes {service.name}
               </h3>
               <div className="space-y-4">
                 <div>
@@ -230,7 +230,7 @@ export default function ServiceDetailClient({ service, slug }: ServiceDetailClie
           <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
             <p className="text-lg leading-relaxed">
               When it comes to {service.name.toLowerCase()} in Portland, Oregon, property owners
-              need a service provider they can trust. Urban Timber Tree Service has been serving
+              need a service provider they can trust. Our experienced tree care team has been serving
               the Portland metropolitan area for over 30 years, providing expert tree care
               services backed by ISA certification and CCB licensing. Our team of certified
               arborists understands the unique challenges of maintaining trees in Portland&apos;s
@@ -263,10 +263,10 @@ export default function ServiceDetailClient({ service, slug }: ServiceDetailClie
             </p>
 
             <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-              The Urban Timber Difference
+              The Tree Services Difference
             </h3>
             <p>
-              What sets Urban Timber Tree Service apart is our commitment to excellence and
+              What sets our tree service team apart is our commitment to excellence and
               safety. Every member of our team holds ISA (International Society of Arboriculture)
               certification, demonstrating their expertise in tree care best practices. We use
               state-of-the-art equipment and follow OSHA safety protocols, ensuring that every
@@ -376,7 +376,7 @@ export default function ServiceDetailClient({ service, slug }: ServiceDetailClie
             Ready for Professional {service.name}?
           </h2>
           <p className="text-xl mb-8 text-green-100">
-            Contact Urban Timber Tree Service for expert {service.name.toLowerCase()} in Portland.
+            Contact Tree Services for expert {service.name.toLowerCase()} in Portland.
             ISA-certified arborists ready to help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -413,9 +413,9 @@ export default function ServiceDetailClient({ service, slug }: ServiceDetailClie
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'LocalBusiness',
-              name: 'Urban Timber Tree Service',
+              name: 'Tree Services',
               description: `Professional ${service.name} services in Portland, Oregon`,
-              url: `https://urbantimber.com/services/${slug}`,
+              url: `https://yourtreeservicewebsite.com/services/${slug}`,
               telephone: '503-449-4066',
               address: {
                 '@type': 'PostalAddress',

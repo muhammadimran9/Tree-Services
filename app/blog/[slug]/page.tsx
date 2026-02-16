@@ -87,7 +87,7 @@ const defaultBlogPosts = {
         <li>Trees removed for construction permits</li>
       </ul>
 
-      <h2>How Urban Timber Tree Service Helps</h2>
+      <h2>How Our Tree Services Team Helps</h2>
       <p>We handle the entire permit process for you:</p>
       <ul>
         <li>Free permit assessment</li>
@@ -258,7 +258,7 @@ export default function BlogPost({ params }: BlogPostProps) {
                 Call (503) 449-4066
               </a>
               <Link 
-                href="/tree-service-and-trimming-quote" 
+                href="/quote" 
                 className="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
               >
                 Get a Quote

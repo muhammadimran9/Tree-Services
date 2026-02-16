@@ -157,13 +157,13 @@ export function generateMetadata({ params }: ServicePageProps): Metadata {
 
   if (!service) {
     return {
-      title: 'Tree Services Portland Oregon | Urban Timber Tree Service',
+      title: 'Tree Services Portland Oregon | Tree Services',
       description:
         'Professional tree services in Portland, Oregon including removal, pruning, stump grinding and emergency tree work.',
     };
   }
 
-  const baseTitle = `${service.name} Portland Oregon | Urban Timber Tree Service`;
+  const baseTitle = `${service.name} in Portland, Oregon | Tree Services`;
 
   return {
     title: baseTitle,
@@ -172,12 +172,18 @@ export function generateMetadata({ params }: ServicePageProps): Metadata {
       title: baseTitle,
       description: service.description,
       type: 'website',
-      url: `https://urbantimber.com/services/${slug}`,
+      url: `https://yourtreeservicewebsite.com/services/${slug}`,
     },
     alternates: {
-      canonical: `https://urbantimber.com/services/${slug}`,
+      canonical: `https://yourtreeservicewebsite.com/services/${slug}`,
     },
   };
+}
+
+export function generateStaticParams() {
+  return (Object.keys(services) as ServiceKey[]).map((slug) => ({
+    'service-slug': slug,
+  }));
 }
 
 export default function ServicePage({ params }: ServicePageProps) {

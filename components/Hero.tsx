@@ -71,7 +71,7 @@ export default function Hero() {
           <div className="text-center text-white">
             {/* H1 with primary keyword */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
-              Tree Service Portland OR
+              Professional Tree Services in Portland, OR
             </h1>
             
             {/* Strong subheadline */}

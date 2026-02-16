@@ -4,23 +4,23 @@ import Footer from '@/components/Footer';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: "About Urban Timber Tree Service | Portland's Trusted Arborists Since 1994",
-  description: "Learn about Urban Timber Tree Service, Portland's premier tree care company with 30+ years of ISA certified experience, CCB license #212995, and 5-star customer ratings.",
+  title: "About Our Tree Services | Trusted Arborists in Portland",
+  description: "Learn about our professional tree services team in Portland, Oregon with decades of experience, licensing, and 5-star customer ratings.",
   openGraph: {
-    title: "About Urban Timber Tree Service | Portland's Trusted Arborists",
-    description: "Portland's premier tree care company with 30+ years of ISA certified experience and 5-star ratings.",
-    url: "https://urbantimber.com/about",
+    title: "About Our Tree Services | Trusted Arborists in Portland",
+    description: "Portland tree care professionals with decades of experience and strong customer reviews.",
+    url: "https://yourtreeservicewebsite.com/about",
     images: [
       {
-        url: "https://urbantimber.com/images/about-og.jpg",
+        url: "https://yourtreeservicewebsite.com/images/about-og.jpg",
         width: 1200,
         height: 630,
-        alt: "About Urban Timber Tree Service - Portland Tree Care Experts"
+        alt: "About our professional tree services team in Portland, Oregon"
       }
     ]
   },
   alternates: {
-    canonical: "https://urbantimber.com/about"
+    canonical: "https://yourtreeservicewebsite.com/about"
   }
 };
 
@@ -35,7 +35,7 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                About Urban Timber Tree Service
+                About Our Tree Services
               </h1>
               <p className="text-xl text-green-100 max-w-3xl mx-auto">
                 Portland's most trusted tree care professionals, serving the community with integrity, 
@@ -53,10 +53,10 @@ export default function AboutPage() {
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
                 <div className="prose prose-lg text-gray-600 space-y-4">
                   <p>
-                    Urban Timber Tree Service began its journey in 1994 with a simple mission: 
+                    Our tree services team began its journey in 1994 with a simple mission: 
                     to provide Portland residents with professional, reliable, and safe tree care 
                     services. What started as a small operation with just two certified arborists 
-                    has grown into the Portland metro area's most trusted tree service company.
+                    has grown into one of the Portland metro area's most trusted tree service providers.
                   </p>
                   <p>
                     Over the past three decades, we've built our reputation on three core principles: 
@@ -71,10 +71,9 @@ export default function AboutPage() {
                     these magnificent organisms deserve.
                   </p>
                   <p>
-                    Today, Urban Timber Tree Service is proud to be Portland's first choice for 
-                    residential and commercial tree care, with thousands of satisfied customers 
-                    throughout the metro area and a 5-star rating that speaks to our commitment to 
-                    excellence.
+                    Today, we are proud to serve residential and commercial clients throughout the
+                    Portland metro area, with thousands of satisfied customers and a 5-star rating
+                    that speaks to our commitment to excellence.
                   </p>
                 </div>
               </div>
@@ -110,7 +109,7 @@ export default function AboutPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Expert Team</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Meet the certified professionals who make Urban Timber Tree Service the best in Portland
+                Meet the certified professionals who make our tree services team one of the most trusted in Portland
               </p>
             </div>
             
@@ -143,7 +142,7 @@ export default function AboutPage() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Professional Certifications</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Professional Certifications</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Fully licensed, insured, and certified for your peace of mind
               </p>
@@ -213,7 +212,7 @@ export default function AboutPage() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Values</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Values</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 The principles that guide everything we do
               </p>
@@ -263,7 +262,7 @@ export default function AboutPage() {
         <section className="py-20 bg-green-700 text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Ready to Experience the Urban Timber Difference?
+              Ready to Experience Better Tree Care?
             </h2>
             <p className="text-xl text-green-100 mb-8">
               Join thousands of satisfied Portland customers who trust us with their tree care needs.

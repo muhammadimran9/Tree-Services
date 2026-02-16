@@ -7,13 +7,13 @@ export default function AboutTeaser() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              About Urban Timber Tree Service of Portland, OR
+              About Our Tree Services in Portland, OR
             </h2>
             <div className="prose prose-lg text-gray-700">
               <p className="mb-4">
-                As a family-owned tree service company founded in 2014, Urban Timber Tree Service has been 
-                dedicated to protecting Portland's urban canopy for nearly a decade. Our mission goes beyond 
-                simple tree care – we're committed to preserving the health and beauty of our city's trees 
+                As a locally owned tree service company founded in 2014, our team has been 
+                dedicated to protecting Portland&apos;s urban canopy for years. Our mission goes beyond 
+                simple tree care – we&apos;re committed to preserving the health and beauty of our city&apos;s trees 
                 while ensuring the safety of your property and family.
               </p>
               <p className="mb-6">

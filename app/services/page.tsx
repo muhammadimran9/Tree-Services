@@ -4,24 +4,26 @@ import Footer from '@/components/Footer';
 import servicesData from '@/data/services.json';
 
 export const metadata: Metadata = {
-  title: 'Professional Tree Services Portland Oregon | Urban Timber Tree Service',
-  description: 'Complete tree care services including safe tree removal, expert pruning, stump grinding, and emergency response. ISA certified arborists serving Portland metro area since 1994.',
+  title: 'Professional Tree Services in Portland Oregon | Tree Services',
+  description:
+    'Complete tree care services including safe tree removal, trimming and pruning, stump grinding, and emergency response. Licensed and insured tree care team serving the Portland metro area.',
   openGraph: {
-    title: 'Professional Tree Services Portland Oregon | Urban Timber Tree Service',
-    description: 'Complete tree care services including safe tree removal, expert pruning, stump grinding, and emergency response.',
-    url: 'https://urbantimber.com/services',
+    title: 'Professional Tree Services in Portland Oregon | Tree Services',
+    description:
+      'Complete tree care services in Portland, Oregon including removal, pruning, stump grinding, and emergency tree service.',
+    url: 'https://yourtreeservicewebsite.com/services',
     images: [
       {
-        url: 'https://urbantimber.com/images/services-og.jpg',
+        url: 'https://yourtreeservicewebsite.com/images/og-services.jpg',
         width: 1200,
         height: 630,
-        alt: 'Tree Services Portland Oregon - Urban Timber Tree Service'
-      }
-    ]
+        alt: 'Professional tree services in Portland, Oregon',
+      },
+    ],
   },
   alternates: {
-    canonical: 'https://urbantimber.com/services'
-  }
+    canonical: 'https://yourtreeservicewebsite.com/services',
+  },
 };
 
 export default function ServicesPage() {
@@ -35,13 +37,12 @@ export default function ServicesPage() {
           {/* Hero Section */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Professional Tree Services Portland Oregon
+              Professional Tree Services in Portland, Oregon
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-8">
-              Urban Timber Tree Service provides comprehensive tree care solutions performed by 
-              ISA-certified arborists with over 30 years of experience serving the Portland 
-              metropolitan area. From routine maintenance to emergency storm response, we deliver 
-              professional, safe, and reliable tree services that protect your property and enhance 
+              We provide comprehensive tree care solutions performed by experienced tree care
+              professionals. From routine maintenance to emergency storm response, we deliver
+              professional, safe, and reliable tree services that protect your property and enhance
               your landscape.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -103,7 +104,7 @@ export default function ServicesPage() {
           {/* Why Choose Us Section */}
           <section className="mt-20 py-16 bg-gray-50">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Choose Urban Timber Tree Service?</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Choose Our Tree Services?</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="text-center">
                   <div className="w-20 h-20 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">

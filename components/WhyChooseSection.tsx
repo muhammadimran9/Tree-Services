@@ -80,10 +80,10 @@ export default function WhyChooseSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Why Choose Urban Timber Tree?
+            Why Choose Our Tree Services?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Portland's trusted tree service company with proven expertise and customer satisfaction
+            Trusted tree service company with proven expertise, safety, and customer satisfaction
           </p>
         </div>
 
@@ -106,7 +106,7 @@ export default function WhyChooseSection() {
         <div className="text-center mt-12">
           <div className="bg-green-700 text-white p-8 rounded-lg">
             <h3 className="text-2xl font-bold mb-4">Ready to Experience the Difference?</h3>
-            <p className="mb-6">Join hundreds of satisfied Portland customers who trust Urban Timber Tree Service</p>
+            <p className="mb-6">Join hundreds of satisfied Portland customers who trust our tree services</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href="tel:503-449-4066" 
@@ -115,7 +115,7 @@ export default function WhyChooseSection() {
                 Call (503) 449-4066
               </a>
               <a 
-                href="/tree-service-and-trimming-quote" 
+                href="/quote" 
                 className="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
               >
                 Get Free Quote

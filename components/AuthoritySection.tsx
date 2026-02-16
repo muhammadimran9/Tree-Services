@@ -30,7 +30,7 @@ export default function AuthoritySection() {
               Call (503) 449-4066
             </a>
             <Link 
-              href="/tree-service-and-trimming-quote" 
+              href="/quote" 
               className="border-2 border-green-700 text-green-700 px-8 py-4 rounded-lg font-semibold hover:bg-green-50 transition-colors"
             >
               Request Quote

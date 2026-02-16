@@ -3,23 +3,23 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Urban Timber Tree Service",
-  description: "Urban Timber Tree Service privacy policy - How we protect and handle your personal information.",
+  title: "Privacy Policy | Tree Services",
+  description: "Tree Services privacy policy - How we protect and handle your personal information.",
   openGraph: {
-    title: "Privacy Policy | Urban Timber Tree Service",
+    title: "Privacy Policy | Tree Services",
     description: "Our commitment to protecting your privacy and personal information.",
-    url: "https://urbantimber.com/privacy-policy",
+    url: "https://yourtreeservicewebsite.com/privacy-policy",
     images: [
       {
-        url: "https://urbantimber.com/images/privacy-og.jpg",
+        url: "https://yourtreeservicewebsite.com/images/privacy-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Privacy Policy - Urban Timber Tree Service"
+        alt: "Privacy Policy - Tree Services"
       }
     ]
   },
   alternates: {
-    canonical: "https://urbantimber.com/privacy-policy"
+    canonical: "https://yourtreeservicewebsite.com/privacy-policy"
   }
 };
 
@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage() {
               <section>
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">Information We Collect</h2>
                 <p className="text-gray-600 mb-4">
-                  At Urban Timber Tree Service, we collect information you provide to us directly when you 
+                  At Tree Services, we collect information you provide to us directly when you 
                   request services, contact us, or otherwise interact with our website. This may include:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4">
@@ -151,7 +151,7 @@ export default function PrivacyPolicyPage() {
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <ul className="space-y-2 text-gray-600">
                     <li><strong>Phone:</strong> (503) 449-4066</li>
-                    <li><strong>Email:</strong> office@urbantimbertree.com</li>
+                    <li><strong>Email:</strong> info@yourtreeservicewebsite.com</li>
                     <li><strong>Address:</strong> 10808 SE Harold St, Portland, OR 97266</li>
                   </ul>
                 </div>

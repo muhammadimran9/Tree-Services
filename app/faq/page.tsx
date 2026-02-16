@@ -36,7 +36,7 @@ const faqData = [
       },
       {
         question: 'Do I need a permit to remove a tree in Portland?',
-        answer: 'Portland requires permits for trees 12 inches or more in diameter. Protected or heritage trees may always need permits. Urban Timber handles all permit applications.'
+        answer: 'Portland requires permits for trees 12 inches or more in diameter. Protected or heritage trees may always need permits. Our team can help handle all permit applications.'
       },
       {
         question: 'How much does tree removal cost?',

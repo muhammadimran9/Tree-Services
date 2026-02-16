@@ -9,7 +9,7 @@ export default function ReviewsSection() {
     {
       name: "Michael Chen", 
       rating: 5,
-      text: "Urban Timber removed a dangerous tree from our property with incredible skill. They handled all the permits and made the process seamless.",
+      text: "The crew removed a dangerous tree from our property with incredible skill. They handled all the permits and made the process seamless.",
       location: "Beaverton, OR"
     },
     {
@@ -25,10 +25,10 @@ export default function ReviewsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Urban Timber Tree Customer Reviews
+            Customer Reviews
           </h2>
           <p className="text-xl text-gray-600">
-            We're committed to exceptional service
+            We&apos;re committed to exceptional service
           </p>
         </div>
 
@@ -81,7 +81,7 @@ export default function ReviewsSection() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://google.com/search?q=Urban+Timber+Tree+Service+Portland+reviews" 
+              href="https://google.com/search?q=tree+services+portland+oregon+reviews" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
@@ -89,7 +89,7 @@ export default function ReviewsSection() {
               Google Reviews
             </a>
             <a 
-              href="https://www.yelp.com/biz/urban-timber-tree-service-portland" 
+              href="https://www.yelp.com/search?find_desc=tree+services&find_loc=Portland%2C+OR" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"

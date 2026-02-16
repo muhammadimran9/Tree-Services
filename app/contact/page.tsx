@@ -66,13 +66,13 @@ export default function ContactPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-700 to-green-900 text-white">
+      <section className="bg-linear-to-r from-green-700 to-green-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Contact Us
+            Contact Tree Services
           </h1>
           <p className="text-xl max-w-3xl">
-            Get in touch with Urban Timber Tree Service for professional tree care in Portland, Oregon. 
+            Get in touch with our professional tree care team in Portland, Oregon. 
             We're here to help with all your tree service needs.
           </p>
         </div>
@@ -218,8 +218,8 @@ export default function ContactPage() {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Email</h3>
-                    <a href="mailto:office@urbantimbertree.com" className="text-green-700 hover:text-green-800 font-medium">
-                      office@urbantimbertree.com
+                    <a href="mailto:info@yourtreeservicewebsite.com" className="text-green-700 hover:text-green-800 font-medium">
+                      info@yourtreeservicewebsite.com
                     </a>
                   </div>
                 </div>
@@ -298,14 +298,14 @@ export default function ContactPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ContactPage",
-            "name": "Contact Urban Timber Tree Service",
-            "description": "Contact Urban Timber Tree Service for professional tree care services in Portland, Oregon",
-            "url": "https://urbantimber.com/contact",
+            "name": "Contact Tree Services",
+            "description": "Contact Tree Services for professional tree care services in Portland, Oregon",
+            "url": "https://yourtreeservicewebsite.com/contact",
             "mainEntity": {
               "@type": "LocalBusiness",
-              "name": "Urban Timber Tree Service Inc.",
+              "name": "Tree Services",
               "telephone": "503-449-4066",
-              "email": "office@urbantimbertree.com",
+              "email": "info@yourtreeservicewebsite.com",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "10808 SE Harold St",

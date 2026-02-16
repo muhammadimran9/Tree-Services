@@ -4,18 +4,18 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Tree Service Portland Oregon | Local Tree Experts in Portland, OR',
+  title: 'Tree Service Portland Oregon | Local Tree Services in Portland, OR',
   description:
-    'Looking for tree service in Portland, Oregon? Urban Timber Tree Service provides safe tree removal, pruning, stump grinding and emergency service across all Portland neighborhoods. Free quotes, ISA certified arborists, CCB #212995.',
+    'Looking for tree service in Portland, Oregon? Tree Services provides safe tree removal, pruning, stump grinding and emergency service across all Portland neighborhoods. Free quotes from a licensed and insured team.',
   openGraph: {
-    title: 'Tree Service Portland Oregon | Urban Timber Tree Service',
+    title: 'Tree Service Portland Oregon | Local Tree Services',
     description:
-      'Full-service tree care in Portland, OR – tree removal, trimming, stump grinding, and emergency tree service performed by ISA certified arborists.',
-    url: 'https://urbantimber.com/locations/portland-tree-service',
+      'Full-service tree care in Portland, OR – tree removal, trimming, stump grinding, and emergency tree service performed by experienced professionals.',
+    url: 'https://yourtreeservicewebsite.com/locations/portland-tree-service',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://urbantimber.com/locations/portland-tree-service',
+    canonical: 'https://yourtreeservicewebsite.com/locations/portland-tree-service',
   },
 };
 
@@ -49,14 +49,14 @@ export default function PortlandTreeServicePage() {
 
       <main>
         {/* Hero */}
-        <section className="bg-gradient-to-r from-green-700 to-green-900 text-white py-16 md:py-20">
+        <section className="bg-linear-to-r from-green-700 to-green-900 text-white py-16 md:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <h1 className="text-3xl md:text-5xl font-bold mb-4">
                 Tree Service in Portland, Oregon
               </h1>
               <p className="text-lg md:text-xl text-green-100 mb-6">
-                Local, licensed, and fully insured tree service company based in Portland, OR.
+                Local, licensed, and fully insured tree service professionals based in Portland, OR.
                 We help homeowners and businesses keep their trees safe, healthy, and beautiful
                 in every season.
               </p>
@@ -96,7 +96,7 @@ export default function PortlandTreeServicePage() {
                 When you search for <strong>tree service in Portland, Oregon</strong>, you are
                 not just looking for someone with a chainsaw – you are looking for a local
                 partner who understands our city&apos;s trees, climate, and regulations.
-                Urban Timber Tree Service has been working in Portland for decades, caring for
+                Our team has been working in Portland for decades, caring for
                 mature street trees in historic neighborhoods, tall evergreens on steep lots,
                 and young plantings in new developments.
               </p>
@@ -192,8 +192,8 @@ export default function PortlandTreeServicePage() {
                 </h2>
                 <p className="text-gray-700 mb-4">
                   From historic east side neighborhoods with towering maples to newer west
-                  side developments with ornamental plantings, Urban Timber Tree Service
-                  provides consistent, reliable tree care across the entire city of Portland.
+                  side developments with ornamental plantings, our crews
+                  provide consistent, reliable tree care across the entire city of Portland.
                   If your property has a Portland mailing address, we can help.
                 </p>
                 <p className="text-gray-700">
@@ -233,9 +233,9 @@ export default function PortlandTreeServicePage() {
         {/* Why choose section focused on Portland */}
         <section className="py-16 md:py-20 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
-              Why Portland Homeowners Choose Urban Timber Tree Service
-            </h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
+                Why Portland Homeowners Choose Our Tree Services
+              </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white rounded-lg shadow-sm p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
@@ -341,9 +341,9 @@ export default function PortlandTreeServicePage() {
               Schedule Tree Service in Portland, Oregon
             </h2>
             <p className="text-green-100 mb-6 text-base md:text-lg">
-              Ready to take care of the trees on your Portland property? Whether you need a
+                Ready to take care of the trees on your Portland property? Whether you need a
               single hazardous tree removed, a full pruning plan, or emergency help after a
-              storm, Urban Timber Tree Service is here for you.
+              storm, Tree Services is here for you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -384,9 +384,9 @@ export default function PortlandTreeServicePage() {
                 },
                 provider: {
                   '@type': 'LocalBusiness',
-                  name: 'Urban Timber Tree Service Inc.',
+                  name: 'Tree Services',
                   telephone: '503-449-4066',
-                  url: 'https://urbantimber.com',
+                  url: 'https://yourtreeservicewebsite.com',
                   address: {
                     '@type': 'PostalAddress',
                     streetAddress: '10808 SE Harold St',
@@ -396,7 +396,7 @@ export default function PortlandTreeServicePage() {
                     addressCountry: 'US',
                   },
                 },
-                url: 'https://urbantimber.com/locations/portland-tree-service',
+                url: 'https://yourtreeservicewebsite.com/locations/portland-tree-service',
                 serviceType: [
                   'Tree Removal',
                   'Tree Trimming',

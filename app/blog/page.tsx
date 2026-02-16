@@ -84,7 +84,7 @@ export default function BlogListingPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-700 to-green-900 text-white">
+      <section className="bg-linear-to-r from-green-700 to-green-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Tree Care Tips & Insights
@@ -169,7 +169,7 @@ export default function BlogListingPage() {
               Read our tips or contact us for professional service.
             </p>
             <Link 
-              href="/tree-service-and-trimming-quote" 
+              href="/quote" 
               className="inline-flex items-center bg-white text-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Get a Quote

@@ -5,12 +5,6 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'urbantimber.com',
-        port: '',
-        pathname: '/images/**',
-      },
-      {
-        protocol: 'https',
         hostname: '**.facebook.com',
         port: '',
         pathname: '/**',

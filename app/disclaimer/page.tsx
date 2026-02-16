@@ -3,10 +3,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Disclaimer | Urban Timber Tree Service',
-  description: 'Disclaimer and legal information for Urban Timber Tree Service website and services.',
+  title: 'Disclaimer | Tree Services',
+  description: 'Disclaimer and legal information for the Tree Services website and services.',
   alternates: {
-    canonical: 'https://urbantimber.com/disclaimer'
+    canonical: 'https://yourtreeservicewebsite.com/disclaimer'
   }
 };
 
@@ -26,19 +26,19 @@ export default function DisclaimerPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg max-w-none">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Website Disclaimer</h2>
           <p className="text-gray-700 mb-6">
-            The information on this website (urbantimber.com) is provided on an "as is" basis. To the fullest 
-            extent permitted by law, Urban Timber Tree Service Inc. excludes all representations, warranties, 
+            The information on this website is provided on an "as is" basis. To the fullest 
+            extent permitted by law, Tree Services excludes all representations, warranties, 
             and conditions relating to this website and the use of this website.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">No Warranties</h2>
           <p className="text-gray-700 mb-6">
             This website is provided "as is" without any representations or warranties, express or implied. 
-            Urban Timber Tree Service Inc. makes no representations or warranties in relation to this 
+            Tree Services makes no representations or warranties in relation to this 
             website or the information and materials provided on this website.
           </p>
           <p className="text-gray-700 mb-6">
-            Without prejudice to the generality of the foregoing paragraph, Urban Timber Tree Service Inc. 
+            Without prejudice to the generality of the foregoing paragraph, Tree Services 
             does not warrant that:
           </p>
           <ul className="list-disc pl-6 text-gray-700 mb-6">
@@ -49,7 +49,7 @@ export default function DisclaimerPage() {
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Limitations of Liability</h2>
           <p className="text-gray-700 mb-6">
-            Urban Timber Tree Service Inc. will not be liable to you (whether under the law of contact, the 
+            Tree Services will not be liable to you (whether under the law of contract, the 
             law of torts, or otherwise) in relation to the contents of, or use of, or otherwise in connection 
             with, this website:
           </p>
@@ -62,7 +62,7 @@ export default function DisclaimerPage() {
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Service Disclaimer</h2>
           <p className="text-gray-700 mb-6">
-            While Urban Timber Tree Service Inc. strives to provide accurate information about our services, 
+            While Tree Services strives to provide accurate information about our services, 
             tree care outcomes can vary based on numerous factors including tree species, health, environmental 
             conditions, and other variables beyond our control. We cannot guarantee specific results for any 
             tree care service.
@@ -77,9 +77,9 @@ export default function DisclaimerPage() {
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Third-Party Links</h2>
           <p className="text-gray-700 mb-6">
-            This website may contain links to third-party websites. Urban Timber Tree Service Inc. is not 
+            This website may contain links to third-party websites. Tree Services is not 
             responsible for the content, privacy policies, or practices of third-party websites. The inclusion 
-            of any link does not imply endorsement by Urban Timber Tree Service Inc.
+            of any link does not imply endorsement by Tree Services.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Testimonials and Reviews</h2>
@@ -115,10 +115,10 @@ export default function DisclaimerPage() {
             If you have any questions about this disclaimer, please contact us:
           </p>
           <div className="bg-gray-50 p-6 rounded-lg mb-6">
-            <p className="text-gray-700 mb-2"><strong>Urban Timber Tree Service Inc.</strong></p>
+            <p className="text-gray-700 mb-2"><strong>Tree Services</strong></p>
             <p className="text-gray-700 mb-2">10808 SE Harold St, Portland, OR 97266</p>
             <p className="text-gray-700 mb-2">Phone: <a href="tel:503-449-4066" className="text-green-700 hover:text-green-800">(503) 449-4066</a></p>
-            <p className="text-gray-700">Email: <a href="mailto:office@urbantimbertree.com" className="text-green-700 hover:text-green-800">office@urbantimbertree.com</a></p>
+            <p className="text-gray-700">Email: <a href="mailto:info@yourtreeservicewebsite.com" className="text-green-700 hover:text-green-800">info@yourtreeservicewebsite.com</a></p>
           </div>
         </div>
       </section>

@@ -4,10 +4,10 @@ import Footer from '@/components/Footer';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Sitemap | Urban Timber Tree Service',
-  description: 'Complete sitemap of Urban Timber Tree Service website. Find all pages and services.',
+  title: 'Sitemap | Tree Services',
+  description: 'Complete sitemap of the Tree Services website. Find all pages and services.',
   alternates: {
-    canonical: 'https://urbantimber.com/sitemap'
+    canonical: 'https://yourtreeservicewebsite.com/sitemap'
   }
 };
 
@@ -21,12 +21,12 @@ export default function SitemapPage() {
     {
       title: 'About Us',
       url: '/about',
-      description: 'Learn about Urban Timber Tree Service and our team'
+      description: 'Learn about our tree care team and approach'
     },
     {
       title: 'Contact Us',
       url: '/contact',
-      description: 'Get in touch with Urban Timber Tree Service'
+      description: 'Get in touch with Tree Services'
     },
     {
       title: 'Blog',
@@ -36,7 +36,7 @@ export default function SitemapPage() {
     {
       title: 'Services',
       url: '/services',
-      description: 'All tree services offered by Urban Timber'
+      description: 'All tree services offered'
     },
     {
       title: 'Tree Service Portland Oregon',
@@ -98,7 +98,7 @@ export default function SitemapPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-6">Sitemap</h1>
           <p className="text-gray-600 mb-8">
-            Find all pages and services on the Urban Timber Tree Service website.
+            Find all pages and services on the Tree Services website.
           </p>
         </div>
       </section>
@@ -127,7 +127,7 @@ export default function SitemapPage() {
           <div className="mt-12 bg-gray-50 p-6 rounded-lg">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Service Areas</h2>
             <p className="text-gray-700 mb-4">
-              Urban Timber Tree Service proudly serves the following areas in the Portland, Oregon metropolitan region:
+              Tree Services proudly serves the following areas in the Portland, Oregon metropolitan region:
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-gray-700">
               <div>• Portland</div>
@@ -148,10 +148,10 @@ export default function SitemapPage() {
           <div className="mt-8 bg-green-50 p-6 rounded-lg">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Contact Information</h2>
             <div className="text-gray-700 space-y-2">
-              <p><strong>Urban Timber Tree Service Inc.</strong></p>
+              <p><strong>Tree Services</strong></p>
               <p>10808 SE Harold St, Portland, OR 97266</p>
               <p>Phone: <a href="tel:503-449-4066" className="text-green-700 hover:text-green-800">(503) 449-4066</a></p>
-              <p>Email: <a href="mailto:office@urbantimbertree.com" className="text-green-700 hover:text-green-800">office@urbantimbertree.com</a></p>
+              <p>Email: <a href="mailto:info@yourtreeservicewebsite.com" className="text-green-700 hover:text-green-800">info@yourtreeservicewebsite.com</a></p>
               <p className="mt-4"><strong>CCB License #212995</strong></p>
               <p><strong>ISA Certified Arborists</strong></p>
             </div>

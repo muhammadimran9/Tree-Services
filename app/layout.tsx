@@ -3,40 +3,44 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Urban Timber Tree Service Inc. - Professional Tree Care Portland OR",
-    template: "%s | Urban Timber Tree Service"
+    default: "Tree Services | Professional Tree Care in Portland OR",
+    template: "%s | Tree Services",
   },
-  description: "Professional tree services in Portland, Oregon. CCB Licensed #212995, ISA Certified Arborists. Tree removal, pruning, stump grinding, and 24/7 emergency services.",
-  keywords: "tree service Portland, tree removal Portland, tree pruning, stump grinding, emergency tree service, CCB 212995, ISA certified arborist, Urban Timber Tree Service",
+  description:
+    "Professional tree services in Portland, Oregon. Licensed and insured team providing tree removal, pruning, stump grinding, and 24/7 emergency services.",
+  keywords:
+    "tree service Portland, tree removal Portland, tree pruning, stump grinding, emergency tree service, certified arborist, tree services company",
   openGraph: {
-    title: "Urban Timber Tree Service Inc. - Professional Tree Care Portland OR",
-    description: "Professional tree services in Portland, Oregon. CCB Licensed #212995, ISA Certified Arborists. Tree removal, pruning, stump grinding, and 24/7 emergency services.",
+    title: "Tree Services | Professional Tree Care in Portland OR",
+    description:
+      "Professional tree services in Portland, Oregon. Licensed and insured team providing complete tree care for your property.",
     type: "website",
     locale: "en_US",
-    url: "https://urbantimber.com",
-    siteName: "Urban Timber Tree Service",
+    url: "https://yourtreeservicewebsite.com",
+    siteName: "Tree Services",
     images: [
       {
-        url: "https://urbantimber.com/images/og-image.jpg",
+        url: "https://yourtreeservicewebsite.com/images/og-default.jpg",
         width: 1200,
         height: 630,
-        alt: "Urban Timber Tree Service - Professional Tree Care Portland"
-      }
-    ]
+        alt: "Tree services and professional tree care in Portland, Oregon",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Urban Timber Tree Service Inc. - Professional Tree Care Portland OR",
-    description: "Professional tree services in Portland, Oregon. CCB Licensed #212995, ISA Certified Arborists.",
-    images: ["https://urbantimber.com/images/og-image.jpg"]
+    title: "Tree Services | Professional Tree Care in Portland OR",
+    description:
+      "Professional tree services in Portland, Oregon from a licensed and insured team.",
+    images: ["https://yourtreeservicewebsite.com/images/og-default.jpg"],
   },
   robots: {
     index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://urbantimber.com"
-  }
+    canonical: "https://yourtreeservicewebsite.com",
+  },
 };
 
 export default function RootLayout({
@@ -47,11 +51,11 @@ export default function RootLayout({
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Urban Timber Tree Service Inc.",
-    "description": "Professional tree services in Portland, Oregon. CCB Licensed #212995, ISA Certified Arborists.",
-    "url": "https://urbantimber.com",
+    "name": "Tree Services",
+    "description": "Professional tree services in Portland, Oregon including removal, pruning, stump grinding, and emergency tree care.",
+    "url": "https://yourtreeservicewebsite.com",
     "telephone": "503-449-4066",
-    "email": "office@urbantimbertree.com",
+    "email": "info@yourtreeservicewebsite.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "10808 SE Harold St",
@@ -67,12 +71,21 @@ export default function RootLayout({
     },
     "openingHours": "Mo-Su 00:00-23:59",
     "areaServed": [
-      "Portland", "Beaverton", "Lake Oswego", "Gresham", 
-      "Tigard", "Hillsboro", "Milwaukie", "West Linn", 
-      "Oregon City", "Happy Valley", "SE Portland", "NE Portland"
+      "Portland",
+      "Beaverton",
+      "Lake Oswego",
+      "Gresham",
+      "Tigard",
+      "Hillsboro",
+      "Milwaukie",
+      "West Linn",
+      "Oregon City",
+      "Happy Valley",
+      "SE Portland",
+      "NE Portland"
     ],
-    "logo": "https://urbantimber.com/logo.png",
-    "image": "https://urbantimber.com/images/og-image.jpg",
+    "logo": "https://yourtreeservicewebsite.com/logo.png",
+    "image": "https://yourtreeservicewebsite.com/images/og-default.jpg",
     "hasCredential": [
       {
         "@type": "EducationalOccupationalCredential",

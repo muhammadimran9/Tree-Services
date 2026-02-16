@@ -4,10 +4,10 @@ import Footer from '@/components/Footer';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Terms & Conditions | Urban Timber Tree Service',
-  description: 'Terms and conditions for Urban Timber Tree Service. Read our service terms, policies, and legal information.',
+  title: 'Terms & Conditions | Tree Services',
+  description: 'Terms and conditions for Tree Services. Read our service terms, policies, and legal information.',
   alternates: {
-    canonical: 'https://urbantimber.com/terms-conditions'
+    canonical: 'https://yourtreeservicewebsite.com/terms-conditions'
   }
 };
 
@@ -27,14 +27,14 @@ export default function TermsConditionsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-lg max-w-none">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h2>
           <p className="text-gray-700 mb-6">
-            By accessing and using the services of Urban Timber Tree Service Inc. ("we," "us," or "our"), 
+            By accessing and using the services of Tree Services ("we," "us," or "our"), 
             you accept and agree to be bound by the terms and provision of this agreement. If you do not 
             agree to abide by the above, please do not use this service.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Services Provided</h2>
           <p className="text-gray-700 mb-6">
-            Urban Timber Tree Service Inc. provides professional tree care services including but not limited 
+            Tree Services provides professional tree care services including but not limited 
             to tree removal, tree trimming, stump grinding, emergency tree services, and arborist consultations 
             in the Portland, Oregon metropolitan area.
           </p>
@@ -56,13 +56,13 @@ export default function TermsConditionsPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Permits and Permissions</h2>
           <p className="text-gray-700 mb-6">
             The customer is responsible for obtaining all necessary permits and permissions required for tree 
-            work. Urban Timber Tree Service can assist with permit applications, but final responsibility 
+            work. Tree Services can assist with permit applications, but final responsibility 
             rests with the property owner.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">6. Insurance and Liability</h2>
           <p className="text-gray-700 mb-6">
-            Urban Timber Tree Service Inc. is fully licensed (CCB #212995) and insured. We carry general 
+            Tree Services is fully licensed (CCB #212995) and insured. We carry general 
             liability insurance and workers' compensation insurance. However, we are not responsible for 
             damage to underground utilities, structures, or property that was not disclosed during the 
             initial assessment.
@@ -91,7 +91,7 @@ export default function TermsConditionsPage() {
 
           <h2 className="text-2xl font-bold text-gray-900 mb-4">10. Limitation of Liability</h2>
           <p className="text-gray-700 mb-6">
-            To the maximum extent permitted by law, Urban Timber Tree Service Inc.'s liability for any 
+            To the maximum extent permitted by law, Tree Services&apos; liability for any 
             claim arising from our services shall not exceed the total amount paid for the specific service 
             in question.
           </p>
@@ -115,10 +115,10 @@ export default function TermsConditionsPage() {
             For questions about these Terms & Conditions, please contact us at:
           </p>
           <div className="bg-gray-50 p-6 rounded-lg mb-6">
-            <p className="text-gray-700 mb-2"><strong>Urban Timber Tree Service Inc.</strong></p>
+            <p className="text-gray-700 mb-2"><strong>Tree Services</strong></p>
             <p className="text-gray-700 mb-2">10808 SE Harold St, Portland, OR 97266</p>
             <p className="text-gray-700 mb-2">Phone: <a href="tel:503-449-4066" className="text-green-700 hover:text-green-800">(503) 449-4066</a></p>
-            <p className="text-gray-700">Email: <a href="mailto:office@urbantimbertree.com" className="text-green-700 hover:text-green-800">office@urbantimbertree.com</a></p>
+            <p className="text-gray-700">Email: <a href="mailto:info@yourtreeservicewebsite.com" className="text-green-700 hover:text-green-800">info@yourtreeservicewebsite.com</a></p>
           </div>
         </div>
       </section>
