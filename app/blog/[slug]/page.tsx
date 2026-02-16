@@ -137,8 +137,8 @@ export default function BlogPost({ params }: BlogPostProps) {
 
   // Extract H2 headings for TOC
   const content = post.content || '';
-  const headings = content.match(/<h2[^>]*>([^<]+)<\/h2>/g) || [];
-  const cleanHeadings = headings.map(heading => 
+  const headings: string[] = content.match(/<h2[^>]*>([^<]+)<\/h2>/g) || [];
+  const cleanHeadings = headings.map((heading: string) => 
     heading.replace(/<[^>]*>/g, '').replace(/<\/h2>/, '')
   );
 
@@ -225,13 +225,12 @@ export default function BlogPost({ params }: BlogPostProps) {
             className="prose prose-lg max-w-none"
             dangerouslySetInnerHTML={{
               __html: (post.content || '').replace(
-                /<h2([^>]*)>([^<]+)<\/h2>/g, 
-                (match, p1, content) => {
+                /<h2([^>]*)>([^<]+)<\/h2>/g,
+                (_match: string, p1: string, content: string) => {
                   const cleanContent = content.replace(/<[^>]*>/g, '');
-                  const headingId = cleanContent.toLowerCase().replace(/[^a-z0-9]/g, '-');
                   return `<h2 id="heading-${cleanContent}"${p1}>${cleanContent}</h2>`;
                 }
-              )
+              ),
             }}
           />
         </div>
