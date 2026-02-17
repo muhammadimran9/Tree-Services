@@ -1,0 +1,13 @@
+# Handle service pages - redirect to static HTML files
+/services/tree-removal    /services/tree-removal.html   200
+/services/tree-trimming   /services/tree-trimming.html  200
+/services/stump-grinding  /services/stump-grinding.html 200
+/services/emergency-tree-service /services/emergency-tree-service.html 200
+/services/arborist-services /services/arborist-services.html 200
+
+# Handle blog pages
+/blog/seasonal-tree-care-portland /blog/seasonal-tree-care-portland.html 200
+/blog/portland-tree-removal-permits /blog/portland-tree-removal-permits.html 200
+
+# Fallback for other routes
+/*    /index.html   200

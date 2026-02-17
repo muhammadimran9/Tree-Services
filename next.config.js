@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Static generation for Netlify compatibility
+  output: 'export',
+  // Disable image optimization for static export
   images: {
+    unoptimized: true,
     formats: ['image/webp', 'image/avif'],
     remotePatterns: [
       {
@@ -50,17 +54,6 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
   generateEtags: false,
-  // Static generation for better performance
-  output: 'standalone',
-  // ISR configuration for service-area pages
-  async rewrites() {
-    return [
-      {
-        source: '/sitemap.xml',
-        destination: '/api/sitemap',
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;
