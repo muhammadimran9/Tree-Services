@@ -40,15 +40,14 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative h-screen min-h-[600px] max-h-[800px] overflow-hidden">
+    <section className="relative w-full h-screen overflow-hidden">
       {/* Image Carousel */}
       <div className="absolute inset-0">
         {heroImages.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentSlide ? 'opacity-100' : 'opacity-0'
-            }`}
+            className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
+              }`}
           >
             <Image
               src={image.url}
@@ -73,7 +72,7 @@ export default function Hero() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
               Professional Tree Services in Portland, OR
             </h1>
-            
+
             {/* Strong subheadline */}
             <p className="text-xl md:text-2xl lg:text-3xl mb-4 text-green-100 font-semibold drop-shadow-md">
               Professional Tree Care You Can Trust
@@ -100,14 +99,14 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <a 
-                href="tel:503-449-4066" 
+              <a
+                href="tel:503-449-4066"
                 className="bg-orange-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-600 transition-colors text-center shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 📞 Call Now: (503) 449-4066
               </a>
-              <Link 
-                href="/quote" 
+              <Link
+                href="/quote"
                 className="bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-800 transition-colors text-center shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 Get Free Estimate
@@ -123,11 +122,10 @@ export default function Hero() {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`h-3 rounded-full transition-all ${
-              index === currentSlide
+            className={`h-3 rounded-full transition-all ${index === currentSlide
                 ? 'w-8 bg-white'
                 : 'w-3 bg-white/50 hover:bg-white/75'
-            }`}
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}

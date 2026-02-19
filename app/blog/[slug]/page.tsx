@@ -101,20 +101,21 @@ const defaultBlogPosts = {
 };
 
 interface BlogPostProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return Object.keys(defaultBlogPosts).map((slug) => ({
     slug: slug,
   }));
 }
 
-export function generateMetadata({ params }: BlogPostProps): Metadata {
-  const post = defaultBlogPosts[params.slug as keyof typeof defaultBlogPosts];
-  
+export async function generateMetadata({ params }: BlogPostProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = defaultBlogPosts[slug as keyof typeof defaultBlogPosts];
+
   if (!post) {
     return {
       title: 'Blog | Tree Services Portland',
@@ -128,12 +129,13 @@ export function generateMetadata({ params }: BlogPostProps): Metadata {
   };
 }
 
-export default function BlogPost({ params }: BlogPostProps) {
-  const post = defaultBlogPosts[params.slug as keyof typeof defaultBlogPosts];
+export default async function BlogPost({ params }: BlogPostProps) {
+  const { slug } = await params;
+  const post = defaultBlogPosts[slug as keyof typeof defaultBlogPosts];
 
   if (!post) {
     notFound();
   }
 
-  return <BlogPostClient post={post} slug={params.slug} />;
+  return <BlogPostClient post={post} slug={slug} />;
 }

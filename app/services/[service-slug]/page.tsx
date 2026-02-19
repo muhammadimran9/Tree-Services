@@ -146,13 +146,14 @@ const services = {
 type ServiceKey = keyof typeof services;
 
 interface ServicePageProps {
-  params: {
+  params: Promise<{
     'service-slug': string;
-  };
+  }>;
 }
 
-export function generateMetadata({ params }: ServicePageProps): Metadata {
-  const slug = params['service-slug'] as ServiceKey;
+export async function generateMetadata({ params }: ServicePageProps): Promise<Metadata> {
+  const { 'service-slug': slugRaw } = await params;
+  const slug = slugRaw as ServiceKey;
   const service = services[slug];
 
   if (!service) {
@@ -180,14 +181,15 @@ export function generateMetadata({ params }: ServicePageProps): Metadata {
   };
 }
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return (Object.keys(services) as ServiceKey[]).map((slug) => ({
     'service-slug': slug,
   }));
 }
 
-export default function ServicePage({ params }: ServicePageProps) {
-  const slug = params['service-slug'] as ServiceKey;
+export default async function ServicePage({ params }: ServicePageProps) {
+  const { 'service-slug': slugRaw } = await params;
+  const slug = slugRaw as ServiceKey;
   const service = services[slug];
 
   if (!service) {
