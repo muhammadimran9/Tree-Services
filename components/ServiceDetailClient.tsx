@@ -50,13 +50,15 @@ export default function ServiceDetailClient({ service, slug }: ServiceDetailClie
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-linear-to-r from-green-700 to-green-900 text-white">
+      <section className="relative bg-gradient-to-r from-green-700 to-green-900 text-white">
         <div className="absolute inset-0">
           <Image
-            src="/hero-tree.svg"
+            src="/hero-tree.jpg"
             alt={`${service.name} Portland`}
             fill
             className="object-cover opacity-20"
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
