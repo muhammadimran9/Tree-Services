@@ -126,6 +126,13 @@ This project is ready for deployment on:
 - **AWS Amplify**
 - **Docker** (standalone output)
 
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
+
+### Quick Start
+1. Install dependencies: `npm install`
+2. Build: `npm run build`
+3. Deploy to your preferred platform
+
 ## 📝 Customization
 
 ### Adding New Pages
