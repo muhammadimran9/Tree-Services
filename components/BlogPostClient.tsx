@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 interface BlogPostClientProps {
   post: any;
@@ -21,6 +23,8 @@ export default function BlogPostClient({ post, slug }: BlogPostClientProps) {
 
   return (
     <div className="min-h-screen bg-white">
+      <Header />
+      
       {/* Hero Section */}
       <section className="relative bg-linear-to-r from-green-700 to-green-900 text-white">
         {post.image && (
@@ -142,6 +146,8 @@ export default function BlogPostClient({ post, slug }: BlogPostClientProps) {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 }
