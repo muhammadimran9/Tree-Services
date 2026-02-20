@@ -40,6 +40,18 @@ const portlandNeighborhoods = [
   'Rose City Park',
   'Hollywood District',
   'Irvington',
+  'Beaverton',
+  'Hillsboro',
+  'Gresham',
+  'Tigard',
+  'Lake Oswego',
+  'West Linn',
+  'Oregon City',
+  'Milwaukie',
+  'Happy Valley',
+  'Clackamas',
+  'Tualatin',
+  'Wilsonville',
 ];
 
 export default function PortlandTreeServicePage() {

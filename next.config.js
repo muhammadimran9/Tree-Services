@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Static generation for Netlify compatibility
-  output: 'export',
-  // Disable image optimization for static export
+  // Standard Next.js deployment for Vercel compatibility
   images: {
-    unoptimized: true,
     formats: ['image/webp', 'image/avif'],
     remotePatterns: [
       {

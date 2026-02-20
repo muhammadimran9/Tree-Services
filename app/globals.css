@@ -1,14 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
   --background: #f9fafb;
   --foreground: #111827;
-  --primary-green: #166534;
-  /* deep natural green */
-  --light-green: #4ade80;
-  /* accent green */
-  --accent-orange: #f97316;
-  /* accent for CTAs */
+  --primary-green: #166534; /* deep natural green */
+  --light-green: #4ade80;   /* accent green */
+  --accent-orange: #f97316; /* accent for CTAs */
   --dark-gray: #111827;
 }
 
