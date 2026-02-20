@@ -32,35 +32,39 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Hero Section */}
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Professional Tree Services in Portland, Oregon
-            </h1>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-8">
-              We provide comprehensive tree care solutions performed by experienced tree care
-              professionals. From routine maintenance to emergency storm response, we deliver
-              professional, safe, and reliable tree services that protect your property and enhance
-              your landscape.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="tel:503-449-4066" 
-                className="bg-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-800 transition-colors"
-              >
-                Call (503) 449-4066
-              </a>
-              <a 
-                href="/quote" 
-                className="border-2 border-green-700 text-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 transition-colors"
-              >
-                Get Free Quote
-              </a>
+      <main>
+        {/* Hero Section */}
+        <section className="bg-gradient-to-r from-green-700 to-green-900 text-white h-[80vh] flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                Professional Tree Services in Portland, Oregon
+              </h1>
+              <p className="text-xl text-green-100 max-w-4xl mx-auto mb-8">
+                We provide comprehensive tree care solutions performed by experienced tree care
+                professionals. From routine maintenance to emergency storm response, we deliver
+                professional, safe, and reliable tree services that protect your property and enhance
+                your landscape.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a 
+                  href="tel:503-449-4066" 
+                  className="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
+                >
+                  Call (503) 449-4066
+                </a>
+                <a 
+                  href="/quote" 
+                  className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-700 transition-colors"
+                >
+                  Get Free Quote
+                </a>
+              </div>
             </div>
           </div>
+        </section>
 
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           {/* Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {services.map((service) => (

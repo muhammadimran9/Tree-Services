@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 interface BlogPostClientProps {
   post: any;
@@ -21,8 +23,10 @@ export default function BlogPostClient({ post, slug }: BlogPostClientProps) {
 
   return (
     <div className="min-h-screen bg-white">
+      <Header />
+      
       {/* Hero Section */}
-      <section className="relative bg-linear-to-r from-green-700 to-green-900 text-white">
+      <section className="relative bg-gradient-to-r from-green-700 to-green-900 text-white h-[80vh] flex items-center">
         {post.image && (
           <div className="absolute inset-0">
             <Image
@@ -34,7 +38,7 @@ export default function BlogPostClient({ post, slug }: BlogPostClientProps) {
             />
           </div>
         )}
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             <div className="flex items-center text-sm text-green-100 mb-4">
               <time dateTime={post.date}>
@@ -142,6 +146,8 @@ export default function BlogPostClient({ post, slug }: BlogPostClientProps) {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 }

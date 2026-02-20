@@ -182,9 +182,13 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
 }
 
 export async function generateStaticParams() {
-  return (Object.keys(services) as ServiceKey[]).map((slug) => ({
-    'service-slug': slug,
-  }));
+  return [
+    { 'service-slug': 'tree-removal' },
+    { 'service-slug': 'tree-trimming' },
+    { 'service-slug': 'stump-grinding' },
+    { 'service-slug': 'emergency-tree-service' },
+    { 'service-slug': 'arborist-services' }
+  ];
 }
 
 export default async function ServicePage({ params }: ServicePageProps) {

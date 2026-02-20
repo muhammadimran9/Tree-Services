@@ -66,8 +66,8 @@ export default function ContactPage() {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-linear-to-r from-green-700 to-green-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <section className="bg-gradient-to-r from-green-700 to-green-900 text-white h-[80vh] flex items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Contact Tree Services
           </h1>

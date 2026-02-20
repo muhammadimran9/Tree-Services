@@ -50,7 +50,7 @@ export default function ServiceDetailClient({ service, slug }: ServiceDetailClie
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-green-700 to-green-900 text-white">
+      <section className="relative bg-gradient-to-r from-green-700 to-green-900 text-white h-[80vh] flex items-center">
         <div className="absolute inset-0">
           <Image
             src="/hero-tree.jpg"
@@ -61,7 +61,7 @@ export default function ServiceDetailClient({ service, slug }: ServiceDetailClie
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             {service.name} Portland
           </h1>

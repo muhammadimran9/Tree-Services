@@ -107,9 +107,10 @@ interface BlogPostProps {
 }
 
 export async function generateStaticParams() {
-  return Object.keys(defaultBlogPosts).map((slug) => ({
-    slug: slug,
-  }));
+  return [
+    { slug: 'seasonal-tree-care-portland' },
+    { slug: 'portland-tree-removal-permits' }
+  ];
 }
 
 export async function generateMetadata({ params }: BlogPostProps): Promise<Metadata> {
