@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Standard Next.js deployment for Vercel compatibility
+  output: 'export',
   images: {
+    unoptimized: true,
     formats: ['image/webp', 'image/avif'],
     remotePatterns: [
       {
@@ -40,10 +41,7 @@ const nextConfig = {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
   },
-  experimental: {
-    optimizeCss: false,
-    optimizePackageImports: ['lucide-react'],
-  },
+  trailingSlash: true,
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
