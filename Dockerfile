@@ -16,8 +16,9 @@ WORKDIR /app
 ENV NODE_ENV=production
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
+RUN npm install -g serve
 COPY --from=builder /app/out ./out
 USER nextjs
 EXPOSE 3000
 ENV PORT=3000
-CMD ["npx", "serve", "out"]
+CMD ["serve", "-s", "out", "-l", "3000"]
