@@ -47,6 +47,8 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
   generateEtags: false,
+  output: 'export',
+  distDir: 'out',
   async headers() {
     return [
       {
