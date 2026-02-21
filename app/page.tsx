@@ -8,27 +8,39 @@ import AboutTeaser from '@/components/AboutTeaser';
 import ReviewsSection from '@/components/ReviewsSection';
 import DetailedServicesGrid from '@/components/DetailedServicesGrid';
 import WhyChooseSection from '@/components/WhyChooseSection';
+import FAQSection from '@/components/FAQSection';
+import { EmergencyCTA, FreeEstimateCTA, SameDayCTA, TrustBuilderCTA } from '@/components/CTASections';
 
 export const metadata: Metadata = {
-  title: 'Tree Service Portland Oregon | #1 Rated Tree Removal & Care | Free Quotes',
+  title: 'Tree Service Portland & Salem Oregon | #1 Rated Tree Removal | Free Quotes',
   description:
-    'Top-rated tree service in Portland, Oregon. Licensed & insured arborists with 20+ years experience. Tree removal, pruning, stump grinding & emergency services. Available 24/7. Call (503) 449-4066 for FREE estimate today!',
+    'Top-rated tree service in Portland & Salem, Oregon. Licensed & insured arborists with 20+ years experience. Tree removal, pruning, stump grinding & 24/7 emergency services. Call (503) 449-4066 for FREE estimate today!',
   keywords: [
     'tree service Portland Oregon',
+    'tree service Salem Oregon',
     'Portland tree removal',
+    'Salem tree removal',
     'tree trimming Portland OR',
-    'emergency tree service Portland',
+    'tree trimming Salem OR',
+    'emergency tree removal Portland',
+    'emergency tree removal Salem',
     'stump grinding Portland',
+    'stump grinding Salem',
     'certified arborist Portland',
-    'affordable tree service Portland',
-    'tree care Portland',
-    'tree removal near me',
-    'Portland tree company',
+    'certified arborist Salem',
+    'affordable tree removal Portland',
+    'affordable tree removal Salem',
+    'tree removal near me Portland',
+    'tree removal near me Salem',
+    'best tree service Portland',
+    'best tree service Salem',
+    'tree service multnomah county',
+    'tree service marion county',
   ],
   openGraph: {
-    title: 'Tree Service Portland Oregon | #1 Rated Tree Removal & Care',
+    title: 'Tree Service Portland & Salem Oregon | #1 Rated Tree Removal & Care',
     description:
-      'Top-rated tree service in Portland, Oregon. Licensed & insured. Free estimates! Call (503) 449-4066',
+      'Top-rated tree service in Portland & Salem, Oregon. Licensed & insured. Free estimates! Call (503) 449-4066',
     url: 'https://hhhhhhj.netlify.app',
     images: [
       {
@@ -50,12 +62,17 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <EmergencyCTA />
         <AuthoritySection />
         <ServicesQuickLinks />
         <AboutTeaser />
         <ReviewsSection />
         <DetailedServicesGrid />
         <WhyChooseSection />
+        <FreeEstimateCTA />
+        <FAQSection />
+        <SameDayCTA />
+        <TrustBuilderCTA />
       </main>
       <Footer />
     </div>

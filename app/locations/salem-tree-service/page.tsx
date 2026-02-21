@@ -4,13 +4,33 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Tree Service Salem Oregon | Local Tree Services in Salem, OR',
+  title: 'Tree Service Salem Oregon | Best Tree Removal & Trimming | Free Estimates',
   description:
-    'Looking for tree service in Salem, Oregon? Tree Services provides safe tree removal, pruning, stump grinding and emergency service across all Salem areas. Free quotes from a licensed and insured team.',
+    'Top-rated tree service in Salem, Oregon. Licensed & insured arborists providing tree removal, trimming, stump grinding & 24/7 emergency service. Free quotes. Call (503) 449-4066 for Salem tree service!',
+  keywords: [
+    'tree service Salem Oregon',
+    'tree removal Salem OR',
+    'tree trimming Salem',
+    'tree pruning Salem',
+    'emergency tree removal Salem',
+    'stump grinding Salem',
+    'certified arborist Salem',
+    'affordable tree removal Salem',
+    'best tree service Salem',
+    'tree service near me Salem',
+    'tree service marion county',
+    '24 hour tree removal Salem',
+    'same day tree removal Salem',
+    'licensed tree service Salem',
+    'insured tree removal Salem',
+    'commercial tree service Salem',
+    'residential tree service Salem',
+    'tree service keizer',
+  ],
   openGraph: {
-    title: 'Tree Service Salem Oregon | Local Tree Services',
+    title: 'Tree Service Salem Oregon | Best Tree Removal & Trimming',
     description:
-      'Full-service tree care in Salem, OR – tree removal, trimming, stump grinding, and emergency tree service performed by experienced professionals.',
+      'Top-rated Salem tree service - tree removal, trimming, stump grinding & 24/7 emergency service. Licensed & insured. Free estimates! Call (503) 449-4066',
     url: 'https://yourtreeservicewebsite.com/locations/salem-tree-service',
     type: 'website',
   },

@@ -12,28 +12,40 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://hhhhhhj.netlify.app'),
   title: {
-    default: "Tree Services Portland OR | Expert Tree Removal & Care | Free Quotes",
-    template: "%s | Tree Services Portland",
+    default: "Tree Services Portland & Salem OR | Expert Tree Removal & Care | Free Quotes",
+    template: "%s | Tree Services Portland & Salem",
   },
   description:
-    "#1 Tree Service in Portland, Oregon. Licensed & insured arborists providing tree removal, trimming, stump grinding & emergency services. 24/7 availability. Call (503) 449-4066 for FREE estimate!",
+    "#1 Tree Service in Portland & Salem, Oregon. Licensed & insured arborists providing tree removal, trimming, stump grinding & emergency services. 24/7 availability. Call (503) 449-4066 for FREE estimate!",
   keywords: [
     "tree service Portland",
+    "tree service Salem",
     "tree removal Portland OR",
+    "tree removal Salem OR",
     "tree trimming Portland",
+    "tree trimming Salem",
     "stump grinding Portland",
+    "stump grinding Salem",
     "emergency tree service Portland",
+    "emergency tree service Salem",
     "certified arborist Portland",
+    "certified arborist Salem",
     "tree care Portland Oregon",
+    "tree care Salem Oregon",
     "affordable tree service",
     "professional tree removal",
     "tree pruning Portland",
+    "tree pruning Salem",
     "tree cutting service",
     "Portland tree company",
+    "Salem tree company",
     "tree services near me",
     "local tree service Portland",
+    "local tree service Salem",
     "residential tree service",
     "commercial tree service",
+    "tree service multnomah county",
+    "tree service marion county",
   ],
   authors: [{ name: 'Tree Services Portland' }],
   creator: 'Tree Services Portland',
@@ -44,13 +56,13 @@ export const metadata: Metadata = {
     address: true,
   },
   openGraph: {
-    title: "Tree Services Portland OR | Expert Tree Removal & Care",
+    title: "Tree Services Portland & Salem OR | Expert Tree Removal & Care",
     description:
-      "#1 Rated Tree Service in Portland. Licensed & insured team with 20+ years experience. Tree removal, trimming, stump grinding. Free estimates!",
+      "#1 Rated Tree Service in Portland & Salem. Licensed & insured team with 20+ years experience. Tree removal, trimming, stump grinding. Free estimates!",
     type: "website",
     locale: "en_US",
     url: "https://hhhhhhj.netlify.app",
-    siteName: "Tree Services Portland",
+    siteName: "Tree Services Portland & Salem",
     images: [
       {
         url: "/images/og-default.jpg",
@@ -62,9 +74,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tree Services Portland OR | Expert Tree Removal & Care",
+    title: "Tree Services Portland & Salem OR | Expert Tree Removal & Care",
     description:
-      "#1 Rated Tree Service in Portland. Licensed & insured. Free estimates! Call (503) 449-4066",
+      "#1 Rated Tree Service in Portland & Salem. Licensed & insured. Free estimates! Call (503) 449-4066",
     images: ["/images/og-default.jpg"],
   },
   robots: {
@@ -116,6 +128,7 @@ export default function RootLayout({
     "openingHours": "Mo-Su 00:00-23:59",
     "areaServed": [
       "Portland",
+      "Salem",
       "Beaverton",
       "Lake Oswego",
       "Gresham",
@@ -126,7 +139,10 @@ export default function RootLayout({
       "Oregon City",
       "Happy Valley",
       "SE Portland",
-      "NE Portland"
+      "NE Portland",
+      "Keizer",
+      "Multnomah County",
+      "Marion County"
     ],
     "logo": "https://hhhhhhj.netlify.app/logo.png",
     "image": "https://hhhhhhj.netlify.app/images/og-default.jpg",

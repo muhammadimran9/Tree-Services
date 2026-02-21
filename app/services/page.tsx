@@ -4,13 +4,35 @@ import Footer from '@/components/Footer';
 import servicesData from '@/data/services.json';
 
 export const metadata: Metadata = {
-  title: 'Professional Tree Services in Portland Oregon | Tree Services',
+  title: 'Tree Services Portland & Salem Oregon | Tree Removal, Trimming, Stump Grinding',
   description:
-    'Complete tree care services including safe tree removal, trimming and pruning, stump grinding, and emergency response. Licensed and insured tree care team serving the Portland metro area.',
+    'Complete tree care services in Portland & Salem Oregon. Licensed & insured arborists providing tree removal, trimming, stump grinding & 24/7 emergency service. Free estimates. Call (503) 449-4066 now!',
+  keywords: [
+    'tree services Portland Oregon',
+    'tree services Salem Oregon',
+    'tree removal Portland',
+    'tree removal Salem',
+    'tree trimming Portland',
+    'tree trimming Salem',
+    'stump grinding Portland',
+    'stump grinding Salem',
+    'emergency tree service Portland',
+    'emergency tree service Salem',
+    'certified arborist Portland',
+    'certified arborist Salem',
+    'affordable tree service',
+    'professional tree removal',
+    'tree pruning Portland',
+    'tree pruning Salem',
+    'commercial tree service',
+    'residential tree service',
+    'tree service multnomah county',
+    'tree service marion county',
+  ],
   openGraph: {
-    title: 'Professional Tree Services in Portland Oregon | Tree Services',
+    title: 'Tree Services Portland & Salem Oregon | Tree Removal, Trimming, Stump Grinding',
     description:
-      'Complete tree care services in Portland, Oregon including removal, pruning, stump grinding, and emergency tree service.',
+      'Complete tree care services in Portland & Salem Oregon. Licensed & insured arborists. Tree removal, trimming, stump grinding & 24/7 emergency service. Free estimates! Call (503) 449-4066',
     url: 'https://yourtreeservicewebsite.com/services',
     images: [
       {
@@ -38,26 +60,24 @@ export default function ServicesPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Professional Tree Services in Portland, Oregon
+                Tree Services Portland & Salem Oregon | Tree Removal, Trimming & Stump Grinding
               </h1>
               <p className="text-xl text-green-100 max-w-4xl mx-auto mb-8">
-                We provide comprehensive tree care solutions performed by experienced tree care
-                professionals. From routine maintenance to emergency storm response, we deliver
-                professional, safe, and reliable tree services that protect your property and enhance
-                your landscape.
+                🌳 **Licensed & Insured Arborists Serving Portland & Salem** - 24/7 Emergency Tree Service Available. 
+                Call now for **FREE ESTIMATES** on tree removal, trimming, stump grinding & emergency tree service throughout Multnomah & Marion Counties.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
                   href="tel:503-449-4066" 
-                  className="bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
+                  className="bg-orange-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 transition-colors shadow-lg"
                 >
-                  Call (503) 449-4066
+                  📞 Call (503) 449-4066 for FREE Quote
                 </a>
                 <a 
                   href="/quote" 
-                  className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-700 transition-colors"
+                  className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-green-700 transition-colors"
                 >
-                  Get Free Quote
+                  📝 Request Online Quote
                 </a>
               </div>
             </div>
@@ -108,7 +128,7 @@ export default function ServicesPage() {
           {/* Why Choose Us Section */}
           <section className="mt-20 py-16 bg-gray-50">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Choose Our Tree Services?</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">Why Portland & Salem Homeowners Choose Our Tree Services?</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="text-center">
                   <div className="w-20 h-20 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center">
@@ -116,9 +136,9 @@ export default function ServicesPage() {
                       <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">30+ Years Experience</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">30+ Years Local Experience</h3>
                   <p className="text-gray-600">
-                    Serving Portland with certified arborists since 1994
+                    Serving Portland & Salem with certified arborists since 1994. We know Oregon trees!
                   </p>
                 </div>
                 
@@ -128,9 +148,9 @@ export default function ServicesPage() {
                       <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">ISA Certified</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">ISA Certified Arborists</h3>
                   <p className="text-gray-600">
-                    International Society of Arboriculture certified professionals
+                    International Society of Arboriculture certified professionals. Fully licensed & insured.
                   </p>
                 </div>
                 
@@ -140,9 +160,9 @@ export default function ServicesPage() {
                       <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">5-Star Rating</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">5-Star Rated Service</h3>
                   <p className="text-gray-600">
-                    Hundreds of satisfied customers with excellent reviews
+                    500+ Happy customers across Portland & Salem. 100% satisfaction guaranteed!
                   </p>
                 </div>
               </div>
@@ -153,20 +173,21 @@ export default function ServicesPage() {
           <section className="py-16 bg-white">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">Serving All Portland Metro Areas</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">🌳 Serving Portland & Salem Metro Areas</h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  From downtown Portland to surrounding communities, we provide professional tree services 
-                  throughout the entire metropolitan area with prompt, reliable service.
+                  From downtown Portland to Salem neighborhoods, we provide professional tree services 
+                  throughout the entire region with prompt, reliable service. **Same-day service available!**
                 </p>
               </div>
               
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[
-                  'Portland', 'Beaverton', 'Lake Oswego', 'Gresham',
-                  'Tigard', 'Hillsboro', 'Milwaukie', 'West Linn',
-                  'Oregon City', 'Happy Valley', 'Clackamas', 'Vancouver'
+                  'Portland', 'Salem', 'Beaverton', 'Lake Oswego', 
+                  'Gresham', 'Tigard', 'Hillsboro', 'Milwaukie',
+                  'West Linn', 'Oregon City', 'Keizer', 'Happy Valley',
+                  'Multnomah County', 'Marion County', 'Clackamas', 'Vancouver'
                 ].map((city, index) => (
-                  <div key={index} className="bg-gray-50 p-4 rounded-lg text-center text-gray-700 font-medium">
+                  <div key={index} className="bg-green-50 p-4 rounded-lg text-center text-gray-700 font-medium border border-green-200">
                     {city}
                   </div>
                 ))}
@@ -178,24 +199,25 @@ export default function ServicesPage() {
           <section className="py-20 bg-green-700 text-white">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-3xl font-bold mb-6">
-                Ready to Transform Your Landscape?
+                🚀 Ready to Transform Your Property? Call Now for FREE Quote!
               </h2>
               <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
-                Contact us today for professional tree services that enhance your property's 
-                beauty, safety, and value. Free estimates, competitive pricing, and satisfaction guaranteed.
+                🌟 **Limited Time: Same-Day Service Available!** Call (503) 449-4066 for 
+                **FREE ESTIMATES** on tree removal, trimming, stump grinding & emergency service throughout Portland & Salem. 
+                **100% Satisfaction Guaranteed!**
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
                   href="tel:503-449-4066" 
-                  className="bg-white text-green-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                  className="bg-white text-green-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg"
                 >
-                  Call (503) 449-4066
+                  📞 Call (503) 449-4066 - FREE Quote
                 </a>
                 <a 
                   href="/quote" 
-                  className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-green-700 transition-colors"
+                  className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-green-700 transition-colors"
                 >
-                  Get Free Quote
+                  📝 Request Online Quote
                 </a>
               </div>
             </div>

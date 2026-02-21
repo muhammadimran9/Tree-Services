@@ -4,13 +4,32 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Tree Service Portland Oregon | Local Tree Services in Portland, OR',
+  title: 'Tree Service Portland Oregon | Best Tree Removal & Trimming | Free Estimates',
   description:
-    'Looking for tree service in Portland, Oregon? Tree Services provides safe tree removal, pruning, stump grinding and emergency service across all Portland neighborhoods. Free quotes from a licensed and insured team.',
+    'Top-rated tree service in Portland, Oregon. Licensed & insured arborists providing tree removal, trimming, stump grinding & 24/7 emergency service. Free quotes. Call (503) 449-4066 for Portland tree service!',
+  keywords: [
+    'tree service Portland Oregon',
+    'tree removal Portland OR',
+    'tree trimming Portland',
+    'tree pruning Portland',
+    'emergency tree removal Portland',
+    'stump grinding Portland',
+    'certified arborist Portland',
+    'affordable tree removal Portland',
+    'best tree service Portland',
+    'tree service near me Portland',
+    'tree service multnomah county',
+    '24 hour tree removal Portland',
+    'same day tree removal Portland',
+    'licensed tree service Portland',
+    'insured tree removal Portland',
+    'commercial tree service Portland',
+    'residential tree service Portland',
+  ],
   openGraph: {
-    title: 'Tree Service Portland Oregon | Local Tree Services',
+    title: 'Tree Service Portland Oregon | Best Tree Removal & Trimming',
     description:
-      'Full-service tree care in Portland, OR – tree removal, trimming, stump grinding, and emergency tree service performed by experienced professionals.',
+      'Top-rated Portland tree service - tree removal, trimming, stump grinding & 24/7 emergency service. Licensed & insured. Free estimates! Call (503) 449-4066',
     url: 'https://yourtreeservicewebsite.com/locations/portland-tree-service',
     type: 'website',
   },

@@ -8,19 +8,19 @@ import { useState, useEffect } from 'react';
 const heroImages = [
   {
     url: 'https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=1920&q=80',
-    alt: 'Professional tree service team working in Portland, Oregon'
+    alt: 'Professional tree service team working in Portland and Salem, Oregon'
   },
   {
     url: 'https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=1920&q=80',
-    alt: 'Tree removal service in Portland'
+    alt: 'Emergency tree removal service in Portland and Salem'
   },
   {
     url: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&q=80',
-    alt: 'Tree trimming and pruning services Portland Oregon'
+    alt: 'Tree trimming and pruning services Portland and Salem Oregon'
   },
   {
     url: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80',
-    alt: 'Expert arborist services in Portland'
+    alt: 'Expert arborist services in Portland and Salem Oregon'
   }
 ];
 
@@ -70,15 +70,15 @@ export default function Hero() {
           <div className="text-center text-white">
             {/* H1 with primary keyword */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
-              Professional Tree Services in Portland, OR
+              Professional Tree Services in Portland & Salem, OR
             </h1>
 
             {/* Strong subheadline */}
             <p className="text-xl md:text-2xl lg:text-3xl mb-4 text-green-100 font-semibold drop-shadow-md">
-              Professional Tree Care You Can Trust
+              24/7 Emergency Tree Removal • Licensed & Insured • Free Estimates
             </p>
             <p className="text-lg md:text-xl mb-8 text-gray-100 max-w-3xl mx-auto drop-shadow-md">
-              ISA Certified Arborists • 30+ Years Experience • Licensed & Insured • 24/7 Emergency Service
+              Serving Multnomah County & Marion County • ISA Certified Arborists • Same-Day Service Available
             </p>
 
             {/* Trust Indicators */}
