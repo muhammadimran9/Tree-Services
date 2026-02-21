@@ -1,99 +1,7 @@
-'use client';
-
-import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default function QuotePage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    address: '',
-    service: '',
-    message: ''
-  });
-  const [errors, setErrors] = useState<{[key: string]: string}>({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const validateForm = () => {
-    const newErrors: {[key: string]: string} = {};
-
-    if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
-    }
-
-    if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Please enter a valid email address';
-    }
-
-    if (!formData.phone.trim()) {
-      newErrors.phone = 'Phone number is required';
-    } else if (!/^[\d\s\-\(\)]+$/.test(formData.phone)) {
-      newErrors.phone = 'Please enter a valid phone number';
-    }
-
-    if (!formData.address.trim()) {
-      newErrors.address = 'Address is required';
-    }
-
-    if (!formData.service) {
-      newErrors.service = 'Please select a service';
-    }
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-    
-    // Clear error when user starts typing
-    if (errors[name]) {
-      setErrors(prev => ({
-        ...prev,
-        [name]: ''
-      }));
-    }
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!validateForm()) {
-      return;
-    }
-
-    setIsSubmitting(true);
-
-    try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      console.log('Form submitted:', formData);
-      alert('Thank you for your request! We will contact you within 24 hours.');
-      
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        address: '',
-        service: '',
-        message: ''
-      });
-    } catch (error) {
-      alert('There was an error submitting your request. Please try again or call us directly.');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <div className="min-h-screen bg-white">
@@ -105,195 +13,94 @@ export default function QuotePage() {
               Get Your Free Quote
             </h1>
             <p className="text-xl text-gray-600">
-              Fill out the form below and we'll provide you with a free, no-obligation quote 
-              within 24 hours. For emergency services, please call us directly.
+              Every tree service is unique. Let's discuss your specific needs for an accurate quote.
             </p>
           </div>
 
-          <div className="bg-gray-50 rounded-lg p-8">
-            <form onSubmit={handleSubmit} className="space-y-6" noValidate>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    aria-required="true"
-                    aria-invalid={!!errors.name}
-                    aria-describedby={errors.name ? "name-error" : undefined}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent ${
-                      errors.name ? 'border-red-500' : 'border-gray-300'
-                    }`}
-                  />
-                  {errors.name && (
-                    <p id="name-error" className="mt-1 text-sm text-red-600" role="alert">
-                      {errors.name}
-                    </p>
-                  )}
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    aria-required="true"
-                    aria-invalid={!!errors.email}
-                    aria-describedby={errors.email ? "email-error" : undefined}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent ${
-                      errors.email ? 'border-red-500' : 'border-gray-300'
-                    }`}
-                  />
-                  {errors.email && (
-                    <p id="email-error" className="mt-1 text-sm text-red-600" role="alert">
-                      {errors.email}
-                    </p>
-                  )}
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                    Phone Number *
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    required
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="(503) 555-0123"
-                    aria-required="true"
-                    aria-invalid={!!errors.phone}
-                    aria-describedby={errors.phone ? "phone-error" : undefined}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent ${
-                      errors.phone ? 'border-red-500' : 'border-gray-300'
-                    }`}
-                  />
-                  {errors.phone && (
-                    <p id="phone-error" className="mt-1 text-sm text-red-600" role="alert">
-                      {errors.phone}
-                    </p>
-                  )}
-                </div>
-
-                <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
-                    Service Required *
-                  </label>
-                  <select
-                    id="service"
-                    name="service"
-                    required
-                    value={formData.service}
-                    onChange={handleChange}
-                    aria-required="true"
-                    aria-invalid={!!errors.service}
-                    aria-describedby={errors.service ? "service-error" : undefined}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent ${
-                      errors.service ? 'border-red-500' : 'border-gray-300'
-                    }`}
-                  >
-                    <option value="">Select a service</option>
-                    <option value="tree-removal">Tree Removal</option>
-                    <option value="tree-trimming">Tree Trimming</option>
-                    <option value="stump-grinding">Stump Grinding</option>
-                    <option value="tree-cabling">Tree Cabling & Bracing</option>
-                    <option value="tree-assessment">Tree Assessment</option>
-                    <option value="emergency">Emergency Service</option>
-                    <option value="commercial">Commercial Tree Care</option>
-                    <option value="other">Other</option>
-                  </select>
-                  {errors.service && (
-                    <p id="service-error" className="mt-1 text-sm text-red-600" role="alert">
-                      {errors.service}
-                    </p>
-                  )}
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-2">
-                  Service Address *
-                </label>
-                <input
-                  type="text"
-                  id="address"
-                  name="address"
-                  required
-                  value={formData.address}
-                  onChange={handleChange}
-                  placeholder="123 Main St, Portland, OR 97201"
-                  aria-required="true"
-                  aria-invalid={!!errors.address}
-                  aria-describedby={errors.address ? "address-error" : undefined}
-                  className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent ${
-                    errors.address ? 'border-red-500' : 'border-gray-300'
-                  }`}
-                />
-                {errors.address && (
-                  <p id="address-error" className="mt-1 text-sm text-red-600" role="alert">
-                    {errors.address}
-                  </p>
-                )}
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Please describe your tree service needs in detail..."
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                />
-              </div>
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-orange-500 text-white py-4 px-6 rounded-lg font-semibold hover:bg-orange-600 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
-                aria-describedby={isSubmitting ? "submit-status" : undefined}
-              >
-                {isSubmitting ? 'Submitting...' : 'Submit for Free Quote'}
-              </button>
-              {isSubmitting && (
-                <p id="submit-status" className="mt-2 text-sm text-gray-600" aria-live="polite">
-                  Processing your request...
-                </p>
-              )}
-            </form>
-
-            <div className="mt-8 p-6 bg-green-50 rounded-lg">
-              <h3 className="text-lg font-semibold text-green-800 mb-2">Emergency Services</h3>
-              <p className="text-green-700 mb-4">
-                For emergency tree removal or storm damage, call us directly for immediate assistance.
+          <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 md:p-12 shadow-lg">
+            <div className="text-center mb-8">
+              <svg className="w-20 h-20 mx-auto text-green-700 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Call Us for an Accurate Quote
+              </h2>
+              <p className="text-lg text-gray-700 mb-6">
+                Tree service costs vary based on multiple factors. A quick phone call helps us understand your needs and provide the most accurate pricing.
               </p>
-              <a 
-                href="tel:503-449-4066" 
-                className="inline-flex items-center text-green-800 font-semibold hover:text-green-900"
+            </div>
+
+            <div className="bg-white rounded-xl p-6 md:p-8 mb-8">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Why Pricing Varies:</h3>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="flex items-start">
+                  <svg className="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <p className="font-semibold text-gray-900">Service Type</p>
+                    <p className="text-sm text-gray-600">Removal, trimming, grinding, etc.</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <svg className="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <p className="font-semibold text-gray-900">Tree Size & Quantity</p>
+                    <p className="text-sm text-gray-600">Height, diameter, and number of trees</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <svg className="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <p className="font-semibold text-gray-900">Location & Access</p>
+                    <p className="text-sm text-gray-600">Property layout and accessibility</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <svg className="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <p className="font-semibold text-gray-900">Complexity & Risk</p>
+                    <p className="text-sm text-gray-600">Proximity to structures, power lines</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <a
+                href="tel:503-449-4066"
+                className="inline-flex items-center justify-center bg-orange-500 text-white px-10 py-5 rounded-xl text-xl font-bold hover:bg-orange-600 transition-all transform hover:scale-105 shadow-lg"
               >
-                <svg className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-7 h-7 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                (503) 449-4066
+                Call (503) 449-4066
               </a>
+              <p className="text-gray-600 mt-4">Available 24/7 for emergencies</p>
+            </div>
+          </div>
+
+          <div className="mt-12 grid md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-lg shadow-md p-6 text-center">
+              <div className="text-green-700 text-4xl font-bold mb-2">1</div>
+              <h3 className="font-semibold text-gray-900 mb-2">Call Us</h3>
+              <p className="text-sm text-gray-600">Speak with our experienced team</p>
+            </div>
+            <div className="bg-white rounded-lg shadow-md p-6 text-center">
+              <div className="text-green-700 text-4xl font-bold mb-2">2</div>
+              <h3 className="font-semibold text-gray-900 mb-2">Discuss Details</h3>
+              <p className="text-sm text-gray-600">Share your tree service needs</p>
+            </div>
+            <div className="bg-white rounded-lg shadow-md p-6 text-center">
+              <div className="text-green-700 text-4xl font-bold mb-2">3</div>
+              <h3 className="font-semibold text-gray-900 mb-2">Get Accurate Quote</h3>
+              <p className="text-sm text-gray-600">Receive fair, transparent pricing</p>
             </div>
           </div>
         </div>
