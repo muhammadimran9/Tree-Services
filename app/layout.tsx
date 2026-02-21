@@ -10,45 +10,81 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://hhhhhhj.netlify.app'),
   title: {
-    default: "Tree Services | Professional Tree Care in Portland OR",
-    template: "%s | Tree Services",
+    default: "Tree Services Portland OR | Expert Tree Removal & Care | Free Quotes",
+    template: "%s | Tree Services Portland",
   },
   description:
-    "Professional tree services in Portland, Oregon. Licensed and insured team providing tree removal, pruning, stump grinding, and 24/7 emergency services.",
-  keywords:
-    "tree service Portland, tree removal Portland, tree pruning, stump grinding, emergency tree service, certified arborist, tree services company",
+    "#1 Tree Service in Portland, Oregon. Licensed & insured arborists providing tree removal, trimming, stump grinding & emergency services. 24/7 availability. Call (503) 449-4066 for FREE estimate!",
+  keywords: [
+    "tree service Portland",
+    "tree removal Portland OR",
+    "tree trimming Portland",
+    "stump grinding Portland",
+    "emergency tree service Portland",
+    "certified arborist Portland",
+    "tree care Portland Oregon",
+    "affordable tree service",
+    "professional tree removal",
+    "tree pruning Portland",
+    "tree cutting service",
+    "Portland tree company",
+    "tree services near me",
+    "local tree service Portland",
+    "residential tree service",
+    "commercial tree service",
+  ],
+  authors: [{ name: 'Tree Services Portland' }],
+  creator: 'Tree Services Portland',
+  publisher: 'Tree Services Portland',
+  formatDetection: {
+    telephone: true,
+    email: true,
+    address: true,
+  },
   openGraph: {
-    title: "Tree Services | Professional Tree Care in Portland OR",
+    title: "Tree Services Portland OR | Expert Tree Removal & Care",
     description:
-      "Professional tree services in Portland, Oregon. Licensed and insured team providing complete tree care for your property.",
+      "#1 Rated Tree Service in Portland. Licensed & insured team with 20+ years experience. Tree removal, trimming, stump grinding. Free estimates!",
     type: "website",
     locale: "en_US",
-    url: "https://yourtreeservicewebsite.com",
-    siteName: "Tree Services",
+    url: "https://hhhhhhj.netlify.app",
+    siteName: "Tree Services Portland",
     images: [
       {
-        url: "https://yourtreeservicewebsite.com/images/og-default.jpg",
+        url: "/images/og-default.jpg",
         width: 1200,
         height: 630,
-        alt: "Tree services and professional tree care in Portland, Oregon",
+        alt: "Professional tree services in Portland, Oregon - Tree removal, trimming, and care",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tree Services | Professional Tree Care in Portland OR",
+    title: "Tree Services Portland OR | Expert Tree Removal & Care",
     description:
-      "Professional tree services in Portland, Oregon from a licensed and insured team.",
-    images: ["https://yourtreeservicewebsite.com/images/og-default.jpg"],
+      "#1 Rated Tree Service in Portland. Licensed & insured. Free estimates! Call (503) 449-4066",
+    images: ["/images/og-default.jpg"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   alternates: {
-    canonical: "https://yourtreeservicewebsite.com",
+    canonical: "https://hhhhhhj.netlify.app",
   },
+  verification: {
+    google: 'your-google-verification-code',
+  },
+  category: 'Tree Services',
 };
 
 export default function RootLayout({
@@ -61,7 +97,7 @@ export default function RootLayout({
     "@type": "LocalBusiness",
     "name": "Tree Services",
     "description": "Professional tree services in Portland, Oregon including removal, pruning, stump grinding, and emergency tree care.",
-    "url": "https://yourtreeservicewebsite.com",
+    "url": "https://hhhhhhj.netlify.app",
     "telephone": "503-449-4066",
     "email": "info@yourtreeservicewebsite.com",
     "address": {
@@ -92,8 +128,8 @@ export default function RootLayout({
       "SE Portland",
       "NE Portland"
     ],
-    "logo": "https://yourtreeservicewebsite.com/logo.png",
-    "image": "https://yourtreeservicewebsite.com/images/og-default.jpg",
+    "logo": "https://hhhhhhj.netlify.app/logo.png",
+    "image": "https://hhhhhhj.netlify.app/images/og-default.jpg",
     "hasCredential": [
       {
         "@type": "EducationalOccupationalCredential",
@@ -128,6 +164,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

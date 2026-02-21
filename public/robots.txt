@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /admin
-Disallow: /private
+Disallow: /api
 
-Sitemap: https://yourtreeservicewebsite.com/sitemap.xml
+Sitemap: https://hhhhhhj.netlify.app/sitemap.xml

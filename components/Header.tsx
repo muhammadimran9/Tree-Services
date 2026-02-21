@@ -64,7 +64,7 @@ export default function Header() {
             <Link href="/contact" className="text-gray-700 hover:text-green-600 transition-colors">
               Contact
             </Link>
-            <Link href="/locations/portland-tree-service" className="text-gray-700 hover:text-green-600 transition-colors">
+            <Link href="/locations" className="text-gray-700 hover:text-green-600 transition-colors">
               Locations
             </Link>
             <Link href="/blog" className="text-gray-700 hover:text-green-600 transition-colors">
@@ -157,7 +157,7 @@ export default function Header() {
               <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
                 Contact
               </Link>
-              <Link href="/locations/portland-tree-service" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
+              <Link href="/locations" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">
                 Locations
               </Link>
               <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-md" role="menuitem">

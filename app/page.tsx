@@ -10,25 +10,37 @@ import DetailedServicesGrid from '@/components/DetailedServicesGrid';
 import WhyChooseSection from '@/components/WhyChooseSection';
 
 export const metadata: Metadata = {
-  title: 'Tree Service Portland Oregon | Tree Services - Free Quotes',
+  title: 'Tree Service Portland Oregon | #1 Rated Tree Removal & Care | Free Quotes',
   description:
-    'Professional tree service in Portland, Oregon. Licensed and insured team with decades of experience providing tree removal, pruning, stump grinding, and emergency services. Call (503) 449-4066 for a free estimate.',
+    'Top-rated tree service in Portland, Oregon. Licensed & insured arborists with 20+ years experience. Tree removal, pruning, stump grinding & emergency services. Available 24/7. Call (503) 449-4066 for FREE estimate today!',
+  keywords: [
+    'tree service Portland Oregon',
+    'Portland tree removal',
+    'tree trimming Portland OR',
+    'emergency tree service Portland',
+    'stump grinding Portland',
+    'certified arborist Portland',
+    'affordable tree service Portland',
+    'tree care Portland',
+    'tree removal near me',
+    'Portland tree company',
+  ],
   openGraph: {
-    title: 'Tree Service Portland Oregon | Tree Services',
+    title: 'Tree Service Portland Oregon | #1 Rated Tree Removal & Care',
     description:
-      'Professional tree service in Portland, Oregon from a licensed and insured tree care team.',
-    url: 'https://yourtreeservicewebsite.com',
+      'Top-rated tree service in Portland, Oregon. Licensed & insured. Free estimates! Call (503) 449-4066',
+    url: 'https://hhhhhhj.netlify.app',
     images: [
       {
-        url: 'https://yourtreeservicewebsite.com/images/og-default.jpg',
+        url: '/images/og-default.jpg',
         width: 1200,
         height: 630,
-        alt: 'Tree Service Portland Oregon - Tree Services',
+        alt: 'Professional Tree Service Portland Oregon - Tree Removal & Care',
       },
     ],
   },
   alternates: {
-    canonical: 'https://yourtreeservicewebsite.com',
+    canonical: 'https://hhhhhhj.netlify.app',
   },
 };
 
