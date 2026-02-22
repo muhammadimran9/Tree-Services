@@ -73,18 +73,7 @@ export default function Header() {
           </div>
 
           {/* Phone CTA - Right */}
-          <div className="hidden lg:flex items-center space-x-3">
-            <a 
-              href="mailto:info@yourtreeservicewebsite.com" 
-              className="flex items-center text-gray-700 hover:text-green-600 transition-colors"
-              title="Email Tree Services"
-              aria-label="Email Tree Services"
-            >
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              <span className="sr-only">Email</span>
-            </a>
+          <div className="hidden lg:flex items-center">
             <a 
               href="tel:503-449-4066" 
               className="flex items-center bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800 transition-colors"
