@@ -1,6 +1,12 @@
 User-agent: *
 Allow: /
 Disallow: /admin
+<<<<<<< HEAD
 Disallow: /api
 
 Sitemap: https://hhhhhhj.netlify.app/sitemap.xml
+=======
+Disallow: /private
+
+Sitemap: https://yourtreeservicewebsite.com/sitemap.xml
+>>>>>>> origin/v0/malanhans777-5192-d823e987

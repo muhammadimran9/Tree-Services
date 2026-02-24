@@ -50,7 +50,7 @@ export default function ServiceDetailClient({ service, slug }: ServiceDetailClie
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-green-700 to-green-900 text-white h-[80vh] flex items-center">
+      <section className="relative bg-gradient-to-r from-green-700 to-green-900 text-white">
         <div className="absolute inset-0">
           <Image
             src="/hero-tree.jpg"

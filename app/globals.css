@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #f9fafb;
@@ -8,16 +10,6 @@
   --light-green: #4ade80;   /* accent green */
   --accent-orange: #f97316; /* accent for CTAs */
   --dark-gray: #111827;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--primary-green);
-  --color-secondary: var(--light-green);
-  --color-accent: var(--accent-orange);
-  --color-dark: var(--dark-gray);
-  --font-sans: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 body {
